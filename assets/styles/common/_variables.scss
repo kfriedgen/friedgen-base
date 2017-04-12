@@ -2,5 +2,53 @@
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+// Spacing
+$global-spacer--half:           5px;
+$global-spacer:                 10px;
+$global-spacer--three-halves:   15px;
+$global-spacer--2:              20px;
+$global-spacer--3:              30px;
+$global-spacer--4:              40px;
+$global-spacer--5:              50px;
+
+// Z-Index
+$z-index-navigation:            1000;
+$z-index-background:            0;
+
 // Colors
-$brand-primary:         #27ae60;
+$black: #000a12;
+$white: #ffffff;
+$blue-dark: #4b636e;
+$blue: #78909c;
+$blue-light: #a7c0cd;
+$red: #b71c1c;
+$red-dark: #7f0000;
+$red-light: #f05545;
+
+// UX Colors 
+$body-background: $white;
+$text-primary: $black;
+$heading-primary: $black;
+$heading-secondary: $blue-light;
+$link: $red-dark;
+
+$disabled: #858585;
+
+
+
+// Typefaces
+$font-sans-serif:       'Open Sans', Arial, sans-serif;
+$font-serif:            'Cormorant Garamond', Georgia, serif;
+$font-primary:          'Open Sans', Arial, sans-serif;
+$font-secondary:        'Cormorant Garamond', Georgia, serif;
+$font-tertiary:         Georgia, serif;
+
+// Font Size
+
+$font-extra-small:      11px;
+$font-small:            13px;
+$font-normal:           14px;
+$font-medium:           18px;
+$font-large:            24px;
+$font-extra-large:      36px;
+$font-extra-extra-large:50px;

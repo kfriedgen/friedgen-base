@@ -1,1 +1,84 @@
+// Global
 
+body {}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: $global-spacer--2;
+    font-family: $font-serif;
+    font-size: $font-extra-extra-large;
+    line-height: 60px;
+    color: $heading-primary;
+}
+
+h2 {
+    margin-bottom: $global-spacer--2;
+    font-family: $font-sans-serif;
+    font-size: $font-extra-large;
+    font-weight: 600;
+    color: $heading-primary;
+}
+
+h3 {
+    margin-bottom: $global-spacer--three-halves;
+    font-family: $font-serif;
+    font-size: $font-extra-large;
+    font-style: italic;
+    color: $heading-primary;
+}
+
+h4 {
+    margin-bottom: $global-spacer;
+    font-family: $font-sans-serif;
+    font-size: $font-medium;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $heading-primary;
+}
+
+h5 {
+    margin-bottom: $global-spacer;
+    font-family: $font-serif;
+    font-size: $font-medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $heading-primary;
+}
+
+h6 {
+    margin-bottom: $global-spacer;
+    font-family: $font-sans-serif;
+    font-size: $font-small;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: $heading-secondary;
+}
+
+p,
+ul,
+ol,
+blockquote {
+    font-family: $font-tertiary;   
+    letter-spacing: 0.05px;
+    line-height: 26px;
+    color: $text-primary;
+}
+
+a {
+    color: $red;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $body-background;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $red-light;
+        border-color: $red-light;
+    }
+}

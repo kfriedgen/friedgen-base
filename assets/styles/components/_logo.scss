@@ -1,0 +1,14 @@
+// Logo Styles
+
+.logo {
+
+    &__a {
+        padding-left: 170px; // Compensating for the search bar
+        font-family: $font-sans-serif;
+        font-size: $font-large;
+        font-weight: 600;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        color: $black;
+    }
+}

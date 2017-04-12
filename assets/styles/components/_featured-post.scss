@@ -1,0 +1,32 @@
+// Featured Post
+
+.featured-post {
+
+
+    &__image {
+        height: 523px;
+
+        &--link {
+        }
+    }
+
+    &__a {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    &__inner {
+        max-width: 80%;
+        padding: $global-spacer--2 $global-spacer--4;
+        background: rgba($body-background, 1);
+
+        @include media-breakpoint-up(sm) {
+            max-width: 50%;
+        }
+    }
+}

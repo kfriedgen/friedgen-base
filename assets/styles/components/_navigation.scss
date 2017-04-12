@@ -1,0 +1,22 @@
+// Navigation Styles
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: $global-spacer 0;
+
+    & li a {
+        font-family: $font-sans-serif;
+        font-size: $font-small;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $blue;
+
+        &:hover,
+        &:focus {
+            color: $blue-dark;
+            border-color: $blue-dark;
+        }
+    }
+}

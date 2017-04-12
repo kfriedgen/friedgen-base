@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://friedgen-base.dev"
+    "devUrl": "http://localhost:3000"
   }
 }
