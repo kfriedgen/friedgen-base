@@ -2,6 +2,9 @@
 
 .featured-post {
 
+    &__title {
+        margin-bottom: $global-spacer--4;
+    }
 
     &__image {
         height: 523px;

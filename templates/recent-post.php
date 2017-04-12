@@ -5,7 +5,7 @@
     foreach ( $postslist as $post ) :
       setup_postdata( $post ); ?> 
     
-    <div class="featured-post-post">
+    <div class="featured-post">
 
         <?php if (has_post_thumbnail( $post->ID ) ): ?>
             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
@@ -33,7 +33,6 @@
                     </div>
 
                 </a>
-
 
             </div>
 

@@ -7,7 +7,8 @@ img {
     height: auto;
 }
 
-h1 {
+h1,
+.h1 {
     margin-bottom: $global-spacer--2;
     font-family: $font-serif;
     font-size: $font-extra-extra-large;
@@ -15,7 +16,8 @@ h1 {
     color: $heading-primary;
 }
 
-h2 {
+h2,
+.h2 {
     margin-bottom: $global-spacer--2;
     font-family: $font-sans-serif;
     font-size: $font-extra-large;
@@ -23,7 +25,8 @@ h2 {
     color: $heading-primary;
 }
 
-h3 {
+h3,
+.h3 {
     margin-bottom: $global-spacer--three-halves;
     font-family: $font-serif;
     font-size: $font-extra-large;
@@ -31,17 +34,20 @@ h3 {
     color: $heading-primary;
 }
 
-h4 {
+h4,
+.h4 {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
     font-size: $font-medium;
+    line-height: $font-medium+10;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     color: $heading-primary;
 }
 
-h5 {
+h5,
+.h5 {
     margin-bottom: $global-spacer;
     font-family: $font-serif;
     font-size: $font-medium;
@@ -50,7 +56,8 @@ h5 {
     color: $heading-primary;
 }
 
-h6 {
+h6,
+.h6 {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
     font-size: $font-small;

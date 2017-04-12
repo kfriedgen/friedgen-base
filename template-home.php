@@ -9,5 +9,7 @@
     <?php get_template_part('templates/head'); ?>
 
     <?php get_template_part('templates/recent-post'); ?>
-    
+
+    <?php get_template_part('templates/secondary-recent-posts'); ?>
+
 <?php endwhile; ?>
