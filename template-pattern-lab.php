@@ -7,15 +7,23 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/page', 'header'); ?>
 
-  <h3>Colors:</h3>
-  <?php get_template_part('templates/pattern-lab/colors', 'page'); ?>
+  <div class="pattern-lab">
 
-  <h3>Headings:</h3>
-  <?php get_template_part('templates/pattern-lab/headings', 'page'); ?>
+      <h4 class="pattern-lab__title">Colors:</h4>
+      <?php get_template_part('templates/pattern-lab/colors'); ?>
 
-  <h3>Copy:</h3>
-  <?php get_template_part('templates/pattern-lab/copy', 'page'); ?>
+      <h4 class="pattern-lab__title">Fonts:</h4>
+      <?php get_template_part('templates/pattern-lab/fonts'); ?>
 
-  <h3>Photographs:</h3>
-  <?php get_template_part('templates/pattern-lab/photos', 'page'); ?>
+      <h4 class="pattern-lab__title">Headings:</h4>
+      <?php get_template_part('templates/pattern-lab/headings'); ?>
+
+      <h4 class="pattern-lab__title">Copy:</h4>
+      <?php get_template_part('templates/pattern-lab/copy'); ?>
+
+      <h4 class="pattern-lab__title">Photographs:</h4>
+      <?php get_template_part('templates/pattern-lab/photos'); ?>
+
+  </div>
+
 <?php endwhile; ?>

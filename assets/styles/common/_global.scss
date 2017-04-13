@@ -70,11 +70,22 @@ h6,
 p,
 ul,
 ol,
-blockquote {
+blockquote,
+.font__tertiary {
     font-family: $font-tertiary;   
     letter-spacing: 0.05px;
     line-height: 26px;
     color: $text-primary;
+}
+
+.font {
+    &__primary {
+        font-family: $font-primary;
+    }
+
+    &__secondary {
+        font-family: $font-secondary;
+    }
 }
 
 a {
@@ -88,4 +99,12 @@ a {
         color: $red-light;
         border-color: $red-light;
     }
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: $highlight;
+}
+
+::selection { 
+    background: $highlight;
 }

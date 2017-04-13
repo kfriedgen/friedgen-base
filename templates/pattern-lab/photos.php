@@ -1,4 +1,4 @@
-<p>Gallery</p>
+<h5>Gallery</h5>
 
 <div id="gallery-1" class="gallery galleryid-56 gallery-columns-3 gallery-size-large">
     <figure class="gallery-item">

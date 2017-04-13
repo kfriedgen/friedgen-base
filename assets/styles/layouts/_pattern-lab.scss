@@ -1,0 +1,10 @@
+// Pattern Lab
+
+.pattern-lab {
+
+    &__title {
+        margin-top: $global-spacer--5;
+        color: $gray;
+        border-bottom: 1px solid $gray;
+    }
+}

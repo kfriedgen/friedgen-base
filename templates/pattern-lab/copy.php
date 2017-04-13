@@ -6,7 +6,7 @@
 
 <p>You’ll blow us all away. I’m never satisfied. In New York you can be a new man “President John Adams.” Have fun! Sewin’ some pants.</p>
 
-<p>We laugh and we cry and we break and we make our mistakes. No one else was in the room where it happened. Hey neighbor, your debts are paid ‘cause you don’t pay for labor. The world has no right to my heart. Gentlemen of the jury, I’m curious, bear with me. Are you aware that we’re making history? Gentlemen of the jury, I’m curious, bear with me. Are you aware that we’re making history? She's gotta rise up</p>
+<p>We laugh and we cry and we break and we make our mistakes. <strike>No one else was in the room where it happened.</strike> Hey neighbor, your debts are paid ‘cause you don’t pay for labor. The world has no right to my heart. Gentlemen of the jury, I’m curious, bear with me. Are you aware that we’re making history? Gentlemen of the jury, I’m curious, bear with me. Are you aware that we’re making history? She's gotta rise up</p>
 
 <p>And now time for a list</p>
 

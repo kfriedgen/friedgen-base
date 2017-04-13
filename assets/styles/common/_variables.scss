@@ -18,6 +18,7 @@ $z-index-background:            0;
 // Colors
 $black: #000a12;
 $white: #ffffff;
+$gray: #cccccc;
 $blue-dark: #4b636e;
 $blue: #78909c;
 $blue-light: #a7c0cd;
@@ -32,15 +33,16 @@ $heading-primary: $black;
 $heading-secondary: $blue-light;
 $link: $red-dark;
 
-$disabled: #858585;
+$disabled: $gray;
+$highlight: #ffd0b0;
 
 
 
 // Typefaces
 $font-sans-serif:       'Open Sans', Arial, sans-serif;
 $font-serif:            'Cormorant Garamond', Georgia, serif;
-$font-primary:          'Open Sans', Arial, sans-serif;
-$font-secondary:        'Cormorant Garamond', Georgia, serif;
+$font-primary:          'Cormorant Garamond', Georgia, serif;
+$font-secondary:        'Open Sans', Arial, sans-serif;
 $font-tertiary:         Georgia, serif;
 
 // Font Size
