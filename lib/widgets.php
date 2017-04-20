@@ -8,10 +8,10 @@ function featured_content() {
     register_sidebar( array(
         'name'          => 'Featured Home Content',
         'id'            => 'featured-content',
-        'before_widget' => '<div class="featured-content__introduction">',
+        'before_widget' => '<div class="featured-content">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="featured-content__title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h4 class="featured-content__title">',
+        'after_title'   => '</h4>',
     ) );
 
 }

@@ -51,6 +51,7 @@ h5,
     margin-bottom: $global-spacer;
     font-family: $font-serif;
     font-size: $font-medium;
+    line-height: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     color: $heading-primary;
@@ -61,6 +62,7 @@ h6,
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
     font-size: $font-small;
+    line-height: 20px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -107,4 +109,111 @@ a {
 
 ::selection { 
     background: $highlight;
+}
+
+// Pattern Lab/Brand Colors
+
+.colors {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+        flex-flow: row nowrap;
+        font-family: $font-sans-serif;
+        font-size: $font-extra-small;
+        letter-spacing: 1px;
+    }
+
+    &__brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        margin: $global-spacer 0;
+        color: $body-background;
+        list-style-type: none;
+        
+        @include media-breakpoint-up(lg) {
+            width: 80px;
+            border-radius: 80px;
+        }
+
+        &:nth-child(1) {
+            background: $black;
+        }
+
+        &:nth-child(2) {
+            color: $black;
+            background: $white;
+            border: 1px solid $black;
+        }
+
+        &:nth-child(3) {
+            background: $gray;
+        }
+
+        &:nth-child(4) {
+            background: $blue;
+        }
+
+        &:nth-child(5) {
+            background: $blue-dark;
+        }
+
+        &:nth-child(6) {
+            background: $blue-light;
+        }
+
+        &:nth-child(7) {
+            background: $red;
+        }
+
+        &:nth-child(8) {
+            background: $red-dark;
+        }
+
+        &:nth-child(9) {
+            background: $red-light;
+        }
+    }
+    
+    &__ux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        margin: $global-spacer 0;
+        list-style-type: none;
+        color: $body-background;
+
+        @include media-breakpoint-up(lg) {
+            width: 80px;
+        }
+
+        &:nth-child(1) {
+            color: $body-background;
+            background: $black;
+        }
+
+        &:nth-child(2) {
+            background: $error;
+        }
+
+        &:nth-child(3) {
+            color: $text-primary;
+            background: $warning;
+        }
+
+        &:nth-child(4) {
+            background: $success;
+        }
+
+        &:nth-child(5) {
+            background: $link;
+        }
+    }
 }

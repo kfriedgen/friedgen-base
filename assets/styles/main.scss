@@ -9,13 +9,14 @@
 
 @import "components/logo";
 @import "components/navigation";
-@import "components/featured-post";
-@import "components/recent-posts";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
 @import "components/wp-classes";
+@import "components/custom/featured-post";
+@import "components/custom/recent-posts";
+@import "components/custom/featured-content";
 
 @import "layouts/header";
 @import "layouts/pattern-lab";

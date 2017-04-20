@@ -1,0 +1,44 @@
+// Recent Posts Styles
+
+.recent-posts {
+    max-width: 100%;
+
+    @include media-breakpoint-up(sm) {       
+        max-width: 300px;
+    }
+
+    &__outer {
+        display: none;
+
+        @include media-breakpoint-up(lg) {    
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: $global-spacer--5;
+        }
+    }
+    
+    &__image {
+
+        &--link {
+            display: block;
+            max-width: 300px;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: $global-spacer;
+            border: none;
+
+            &:hover,
+            &:focus {
+                border: none;
+            }
+
+            img {
+                width: 180%;
+            }
+        }
+    }
+
+    &__link {
+        @extend .h4;
+    }
+}

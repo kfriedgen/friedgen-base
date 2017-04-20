@@ -1,0 +1,15 @@
+.featured-content {
+
+    &__outer {
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            width: 90%;
+        }
+    }
+
+    figure {
+        max-width: 50%;
+        margin-right: $global-spacer--3;
+    }
+}

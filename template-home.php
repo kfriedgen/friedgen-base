@@ -12,6 +12,10 @@
 
     <?php get_template_part('templates/home/secondary-recent-posts'); ?>
 
-    <?php get_template_part('templates/home/featured-content'); ?>
+    <div class="featured-content__outer">
+    
+        <?php get_template_part('templates/home/featured-content'); ?>
 
+    </div>
+    
 <?php endwhile; ?>
