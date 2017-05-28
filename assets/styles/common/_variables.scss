@@ -32,6 +32,7 @@ $text-primary: $black;
 $heading-primary: $black;
 $heading-secondary: $blue-light;
 $link: $red-dark;
+$hover: $red-light;
 
 $disabled: $gray;
 $highlight: #ffd0b0;
@@ -44,8 +45,8 @@ $success: #00615B;
 // Typefaces
 $font-sans-serif:       'Open Sans', Arial, sans-serif;
 $font-serif:            'Cormorant Garamond', Georgia, serif;
-$font-primary:          'Cormorant Garamond', Georgia, serif;
-$font-secondary:        'Open Sans', Arial, sans-serif;
+$font-primary:          'Open Sans', Arial, sans-serif;
+$font-secondary:        'Cormorant Garamond', Georgia, serif;
 $font-tertiary:         Georgia, serif;
 
 // Font Size

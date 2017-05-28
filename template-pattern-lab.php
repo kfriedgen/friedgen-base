@@ -21,6 +21,12 @@
       <h4 class="pattern-lab__title">Copy:</h4>
       <?php get_template_part('templates/pattern-lab/copy'); ?>
 
+      <h4 class="pattern-lab__title">Buttons:</h4>
+      <?php get_template_part('templates/pattern-lab/buttons'); ?>
+
+      <h4 class="pattern-lab__title">Forms:</h4>
+      <?php get_template_part('templates/pattern-lab/forms'); ?>
+
       <h4 class="pattern-lab__title">Photographs:</h4>
       <?php get_template_part('templates/pattern-lab/photos'); ?>
 

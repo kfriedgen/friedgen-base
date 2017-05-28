@@ -1,4 +1,7 @@
-// Search form
+// Form Styles
+
+// Search form - from base theme
+
 .search-form {
   @extend .form-inline;
 }
@@ -12,4 +15,44 @@
 .search-form .search-submit {
   @extend .btn;
   @extend .btn-secondary;
+}
+
+// Custom Form Styles
+
+
+label {
+    display: block;
+    font: bold 12px/1.4em $font-sans-serif;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+legend {
+    font: bold 12px/1.4em $font-sans-serif;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+input {
+
+    &[type="text"] {
+        @extend p;
+        height: 35px;
+        border: 1px solid black;
+        padding: $global-spacer $global-spacer--half;
+
+    }
+
+    &[type="checkbox"], 
+    &[type="radio"] {
+        margin-right: $global-spacer;
+    }
+}
+
+textarea {
+    @extend p;
+    width: 100%;
+    max-width: 450px;
+    padding: $global-spacer;
+    border: 1px solid black;
 }

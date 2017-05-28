@@ -13,6 +13,7 @@ $sage_includes = [
   'lib/assets.php',                            // Scripts and stylesheets
   'lib/fonts/sage-google-fonts-config.php',    // Fonts Defined
   'lib/fonts/sage-google-fonts.php',           // Fonts Function
+  'lib/gallery.php',                               // Gallery Image function
   'lib/extras.php',                            // Custom functions
   'lib/setup.php',                             // Theme setup
   'lib/widgets.php',                           // Custom Widgets

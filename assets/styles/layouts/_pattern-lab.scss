@@ -7,4 +7,13 @@
         color: $gray;
         border-bottom: 1px solid $gray;
     }
+
+    &__button-outer {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    &__forms-section {
+        margin-bottom: $global-spacer--2;
+    }
 }

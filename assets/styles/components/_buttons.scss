@@ -1,25 +1,90 @@
 // Button Styles 
 
-.button__primary {
-    display: block;
-    width: 100%;
-    height: 40px;
-    margin: 10px 0;
-    font-size: $font-small;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $white;
-    background: $blue-dark;
+button {
 
     &:hover,
     &:focus {
-        background: $red-light;
+        cursor: pointer;
+        box-shadow: none;
+    }
+}
+
+.button {
+
+    &__primary {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin: 10px 0;
+        font: normal 14px/37px $font-primary;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        background: $blue-dark;
+        border: none;
+
+        &:hover,
+        &:focus {
+            background: $red-light;
+        }
+
+        &--reverse {
+            color: $blue-dark;
+            background: $white;
+            cursor: pointer;
+        }
     }
 
-    &--reverse {
-        color: $blue-dark;
-        background: $white;
+    &__secondary {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 0;
+        color: $white;
+        font: italic 18px/1.8em $font-secondary;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        background: $black;
+        border: 1px solid $black;
+        border-radius: 0;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            background: $white;
+            border: 1px solid $black;
+            box-shadow: none;
+            cursor: pointer;
+        }
     }
+
+    &__text {
+        margin-bottom: $global-spacer;
+        font: normal 18px/40px $font-primary;
+        letter-spacing: 0.5px;
+        background: none;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid $black;
+
+        &:hover,
+        &:focus {
+            color: $hover;
+            border-color: $hover;
+        }
+    }
+
+    &__submit {
+        @extend .button__secondary;
+    }
+}
+
+.btn-secondary, 
+.comment-form input[type=submit], 
+.search-form .search-submit {
+    @extend .button__secondary;
 }

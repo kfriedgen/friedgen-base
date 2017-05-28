@@ -1,6 +1,6 @@
 <h5>Gallery</h5>
 
-<div id="gallery-1" class="gallery galleryid-56 gallery-columns-3 gallery-size-large">
+<div id="gallery-1" class="gallery galleryid-56 gallery-columns-2 gallery-size-large">
     <figure class="gallery-item">
         <div class="gallery-icon landscape">
             <img width="1024" height="683" src="http://friedgen-base.dev/app/uploads/2017/04/womens-march-washington-friedgen-photography-web-res-67-1024x683.jpg" class="attachment-large size-large" alt="" srcset="http://friedgen-base.dev/app/uploads/2017/04/womens-march-washington-friedgen-photography-web-res-67-1024x683.jpg 1024w, http://friedgen-base.dev/app/uploads/2017/04/womens-march-washington-friedgen-photography-web-res-67-300x200.jpg 300w, http://friedgen-base.dev/app/uploads/2017/04/womens-march-washington-friedgen-photography-web-res-67-768x512.jpg 768w, http://friedgen-base.dev/app/uploads/2017/04/womens-march-washington-friedgen-photography-web-res-67.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px">
