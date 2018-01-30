@@ -3,22 +3,24 @@
 // Search form - from base theme
 
 .search-form {
-  @extend .form-inline;
-}
-.search-form label {
-  font-weight: normal;
-  @extend .form-group;
-}
-.search-form .search-field {
-  @extend .form-control;
-}
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-secondary;
+    @extend .form-inline;
+
+    label {
+        @extend .form-group;
+        font-weight: normal;
+    }
+
+    .search-field {
+        @extend .form-control;
+    }
+
+    .search-submit {
+        @extend .btn;
+        @extend .btn-secondary;
+    }
 }
 
 // Custom Form Styles
-
 
 label {
     display: block;
@@ -38,9 +40,8 @@ input {
     &[type="text"] {
         @extend p;
         height: 35px;
-        border: 1px solid black;
+        border: 1px solid $black;
         padding: $global-spacer $global-spacer--half;
-
     }
 
     &[type="checkbox"], 
@@ -50,9 +51,5 @@ input {
 }
 
 textarea {
-    @extend p;
-    width: 100%;
-    max-width: 450px;
-    padding: $global-spacer;
-    border: 1px solid black;
+    @include textarea;
 }

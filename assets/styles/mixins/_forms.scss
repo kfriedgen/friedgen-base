@@ -1,0 +1,9 @@
+// Form Mixins
+
+@mixin textarea {
+    @extend p;
+    width: 100%;
+    padding: $global-spacer;
+    border: 1px solid $black;
+    border-radius: 0;
+}
