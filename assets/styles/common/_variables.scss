@@ -16,45 +16,55 @@ $z-index-navigation:            1000;
 $z-index-background:            0;
 
 // Colors
-$black: #000a12;
+$black: #2d2d2d;
 $white: #ffffff;
-$gray: #cccccc;
-$blue-dark: #4b636e;
-$blue: #78909c;
-$blue-light: #a7c0cd;
-$red: #b71c1c;
-$red-dark: #7f0000;
-$red-light: #f05545;
+$gray: #b7b7b7;
+$gray-dark: #818181;
+$gray-lightest: #f6f5f4;
+$blue-dark: #4b636e; // temp
+$blue: #375053;
+$blue-light: #b2d5d9;
+$blue-transparent: rgba($blue-light, 0.2);
+$red: #a3393b;
+$red-dark: #7f0000; // temp
+$red-light: #f05545; // temp
+$pink: #cb8384;
+$pink-dark: #ac606f; 
+$yellow: #f2c67f;
+$orange: #e3864a;
+$purple: #674962;
+$green: #455d44;
+$green-light: #a6c4a5;
 
 // UX Colors 
-$body-background: $white;
+$body-background: $gray-lightest;
 $text-primary: $black;
 $heading-primary: $black;
-$heading-secondary: $blue-light;
-$link: $red-dark;
-$hover: $red-light;
+$heading-secondary: $gray-dark;
+$link: $pink-dark;
+$hover: $orange;
 
 $disabled: $gray;
-$highlight: #ffd0b0;
+$highlight: $blue-light;
 $error: $red;
-$warning: #FFE2C3;
-$success: #00615B;
+$warning: $orange;
+$success: $green;
 
 
 
 // Typefaces
-$font-sans-serif:           'Open Sans', Arial, sans-serif;
+$font-sans-serif:           'Source Sans Pro', Arial, sans-serif;
 $font-serif:                'Cormorant Garamond', Georgia, serif;
-$font-primary:              'Open Sans', Arial, sans-serif;
+$font-primary:              'Source Sans Pro', Arial, sans-serif;
 $font-secondary:            'Cormorant Garamond', Georgia, serif;
 $font-tertiary:             Georgia, serif;
 
 // Font Size
 
-$font-extra-small:          11px;
-$font-small:                13px;
+$font-extra-small:          11.01px;
+$font-small:                12.44px;
 $font-normal:               14px;
-$font-medium:               18px;
-$font-large:                24px;
-$font-extra-large:          36px;
-$font-extra-extra-large:    50px;
+$font-medium:               17.719px;
+$font-large:                22.425px;
+$font-extra-large:          28.382px;
+$font-extra-extra-large:    40.411px;

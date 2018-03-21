@@ -9,26 +9,40 @@
 
   <div class="pattern-lab">
 
-      <h4 class="pattern-lab__title">Colors:</h4>
-      <?php get_template_part('templates/pattern-lab/colors'); ?>
+      <div class="pattern-lab__section">      
+          <h4 class="pattern-lab__title">Colors:</h4>
+          <?php get_template_part('templates/pattern-lab/colors'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Fonts:</h4>
-      <?php get_template_part('templates/pattern-lab/fonts'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Fonts:</h4>
+          <?php get_template_part('templates/pattern-lab/fonts'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Headings:</h4>
-      <?php get_template_part('templates/pattern-lab/headings'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Headings:</h4>
+          <?php get_template_part('templates/pattern-lab/headings'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Copy:</h4>
-      <?php get_template_part('templates/pattern-lab/copy'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Copy:</h4>
+          <?php get_template_part('templates/pattern-lab/copy'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Buttons:</h4>
-      <?php get_template_part('templates/pattern-lab/buttons'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Buttons:</h4>
+          <?php get_template_part('templates/pattern-lab/buttons'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Forms:</h4>
-      <?php get_template_part('templates/pattern-lab/forms'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Forms:</h4>
+          <?php get_template_part('templates/pattern-lab/forms'); ?>
+      </div>
 
-      <h4 class="pattern-lab__title">Photographs:</h4>
-      <?php get_template_part('templates/pattern-lab/photos'); ?>
+      <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Photographs:</h4>
+          <?php get_template_part('templates/pattern-lab/photos'); ?>
+      </div>
 
   </div>
 

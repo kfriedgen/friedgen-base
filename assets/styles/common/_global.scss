@@ -1,7 +1,11 @@
 // Global
+* {
+    box-sizing: border-box;
+}
 
 body {
     @extend p;
+    background: $body-background;
 }
 
 img {
@@ -15,7 +19,7 @@ h1,
     margin-bottom: $global-spacer--2;
     font-family: $font-serif;
     font-size: $font-extra-extra-large;
-    line-height: 60px;
+    line-height: $font-extra-extra-large+10px;
     color: $heading-primary;
 }
 
@@ -24,61 +28,62 @@ h2,
     margin-bottom: $global-spacer--2;
     font-family: $font-sans-serif;
     font-size: $font-extra-large;
-    font-weight: 600;
+    line-height: $font-extra-large+10px;
     color: $heading-primary;
+    letter-spacing: 0.5px;
 }
 
 h3,
 .h3 {
     margin-bottom: $global-spacer--three-halves;
-    font-family: $font-serif;
-    font-size: $font-extra-large;
-    font-style: italic;
-    color: $heading-primary;
+    font-family: $font-sans-serif;
+    font-size: $font-large;
+    font-weight: 600;
+    color: $heading-secondary;
+    letter-spacing: 0.5px;
 }
 
 h4,
 .h4 {
-    margin-bottom: $global-spacer;
-    font-family: $font-sans-serif;
-    font-size: $font-medium;
-    line-height: $font-medium+10;
-    text-transform: uppercase;
+    margin-bottom: $global-spacer--three-halves;
+    font-family: $font-serif;
+    font-size: $font-large;
+    font-style: italic;
+    line-height: $font-large;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     color: $heading-primary;
 }
 
 h5,
 .h5 {
     margin-bottom: $global-spacer;
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
     font-size: $font-medium;
     line-height: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     color: $heading-primary;
+    text-transform: uppercase;
 }
 
 h6,
 .h6 {
     margin-bottom: $global-spacer;
-    font-family: $font-sans-serif;
-    font-size: $font-small;
+    font-family: $font-serif;
+    font-size: $font-medium;
     line-height: 20px;
-    text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     color: $heading-secondary;
 }
 
 p,
 ul,
 ol,
-blockquote,
-.font__tertiary {
-    font-family: $font-tertiary;   
-    letter-spacing: 0.05px;
+blockquote {
+    font-family: $font-sans-serif; 
+    letter-spacing: 0.08px;
     line-height: 26px;
     color: $text-primary;
 }
@@ -91,18 +96,22 @@ blockquote,
     &__secondary {
         font-family: $font-secondary;
     }
+
+    &__tertiary {
+        font-family: $font-tertiary;
+    }
 }
 
 a {
-    color: $red;
+    color: $link;
     padding-bottom: 2px;
-    border-bottom: 1px solid $body-background;
+    border-bottom: 1px solid $orange;
 
     &:hover,
     &:focus {
         text-decoration: none;
-        color: $hover;
-        border-color: $hover;
+        color: $orange;
+        border-color: $link;
     }
 }
 
@@ -121,12 +130,12 @@ a {
     flex-flow: column wrap;
     justify-content: space-between;
     padding: 0;
+    font-family: $font-sans-serif;
+    font-size: $font-extra-small;
+    letter-spacing: 1px;
 
-    @include media-breakpoint-up(lg) {
-        flex-flow: row nowrap;
-        font-family: $font-sans-serif;
-        font-size: $font-extra-small;
-        letter-spacing: 1px;
+    @include media-breakpoint-up(md) {
+        flex-flow: row wrap;
     }
 
     &__brand {
@@ -137,49 +146,79 @@ a {
         height: 80px;
         margin: $global-spacer 0;
         color: $body-background;
+        text-align: center;
         list-style-type: none;
         
-        @include media-breakpoint-up(lg) {
-            width: 80px;
-            border-radius: 80px;
+        @include media-breakpoint-up(md) {
+            margin: $global-spacer--2;
+            width: 20%;
         }
 
         &:nth-child(1) {
-            background: $black;
+            color: $black;
+            background: $body-background;
+            border: 1px solid $black;
         }
 
         &:nth-child(2) {
             color: $black;
-            background: $white;
-            border: 1px solid $black;
-        }
-
-        &:nth-child(3) {
             background: $gray;
         }
 
+        &:nth-child(3) {
+            background: $black;
+        }
+
         &:nth-child(4) {
-            background: $blue;
+            background: $pink;
         }
 
         &:nth-child(5) {
-            background: $blue-dark;
+            background: $pink-dark;
         }
 
         &:nth-child(6) {
-            background: $blue-light;
-        }
-
-        &:nth-child(7) {
             background: $red;
         }
 
+        &:nth-child(7) {
+            color: $black;
+            background: $yellow;
+        }
+
         &:nth-child(8) {
-            background: $red-dark;
+            background: $orange;
         }
 
         &:nth-child(9) {
-            background: $red-light;
+            background: $purple;
+        }
+
+        &:nth-child(10) {
+            color: $black;
+            background: $blue-transparent;
+        }
+
+        &:nth-child(11) {
+            background: $blue-light;
+        }
+
+        &:nth-child(12) {
+            background: $blue;
+        }
+
+        &:nth-child(13) {
+            background: $green-light;
+        }
+
+        &:nth-child(14) {
+            background: $purple;
+        }
+
+        &:nth-child(15) {
+            color: $black;
+            background: $white;
+            border: 1px solid $black;
         }
     }
     
@@ -193,8 +232,9 @@ a {
         list-style-type: none;
         color: $body-background;
 
-        @include media-breakpoint-up(lg) {
-            width: 80px;
+        @include media-breakpoint-up(md) {
+            margin: $global-spacer--2;
+            width: 180px;
         }
 
         &:nth-child(1) {

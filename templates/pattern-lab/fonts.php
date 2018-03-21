@@ -1,9 +1,9 @@
 <!-- Font Examples -->
 
 <div class="font">
-    <p class="font__primary">Primary font: 'Open Sans', Arial, sans-serif;</p>
-    <p class="font__primary"><em>Primary font italic: 'Open Sans', Arial, sans-serif;</em></p>
-    <p class="font__primary"><strong>Primary font bold: 'Open Sans', Arial, sans-serif;</strong></p>
+    <p class="font__primary">Primary font: 'Source Sans Pro', Arial, sans-serif;</p>
+    <p class="font__primary"><em>Primary font italic: 'Source Sans Pro', Arial, sans-serif;</em></p>
+    <p class="font__primary"><strong>Primary font bold: 'Source Sans Pro', Arial, sans-serif;</strong></p>
 </div>
 
 <div class="font">

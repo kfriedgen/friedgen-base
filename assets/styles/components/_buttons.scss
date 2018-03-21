@@ -12,74 +12,100 @@ button {
 .button {
 
     &__primary {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 40px;
-        margin: 10px 0;
-        font: normal 14px/37px $font-primary;
+        margin: $global-spacer--2 0;
+        font: bold $font-normal $font-primary;
         text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: $white;
-        background: $blue-dark;
-        border: none;
+        letter-spacing: 1.5px;
+        color: $body-background;
+        background: $pink-dark;
+        border: 2px solid $pink-dark;
+        border-radius: 5px;
 
         &:hover,
         &:focus {
-            background: $red-light;
+            color: $pink-dark;
+            background: $body-background;
         }
 
         &--reverse {
-            color: $blue-dark;
-            background: $white;
+            color: $pink-dark;
+            background: $pink;
             cursor: pointer;
         }
     }
 
     &__secondary {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 40px;
-        margin-bottom: 10px;
+        margin-bottom: $global-spacer--2;
         padding: 0;
-        color: $white;
-        font: italic 18px/1.8em $font-secondary;
-        text-transform: lowercase;
+        color: $blue;
+        font: bold $font-normal $font-primary;
         letter-spacing: 1px;
-        background: $black;
-        border: 1px solid $black;
-        border-radius: 0;
+        background: $body-background;
+        border: 2px solid $blue;
+        border-radius: 5px;
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
 
         &:hover,
         &:focus {
-            color: $black;
-            background: $white;
-            border: 1px solid $black;
+            color: $body-background;
+            background: $blue;
+            border-color: $blue;
             box-shadow: none;
             cursor: pointer;
         }
     }
 
     &__text {
-        margin-bottom: $global-spacer;
-        font: normal 18px/40px $font-primary;
+        margin-bottom: $global-spacer--three-halves;
+        font: bold $font-medium $font-primary;
+        color: $blue;
         letter-spacing: 0.5px;
         background: none;
-        padding: 0;
+        padding: $global-spacer--half 0;
         border: none;
-        border-bottom: 1px solid $black;
+        border-bottom: 2px solid $blue;
 
         &:hover,
         &:focus {
-            color: $hover;
-            border-color: $hover;
+            color: $black;
+            border-color: $yellow;
+            background: $yellow;
         }
     }
 
     &__submit {
-        @extend .button__secondary;
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: $global-spacer;
+        padding: 0;
+        color: $body-background;
+        font: bold $font-normal $font-primary;
+        letter-spacing: 1px;
+        background: $black;
+        border: none;
+        border-radius: 5px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            background: rgba($white, 0.8);
+            box-shadow: none;
+            cursor: pointer;
+        }
     }
 }
 
