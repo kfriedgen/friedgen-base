@@ -40,6 +40,11 @@
       </div>
 
       <div class="pattern-lab__section"> 
+          <h4 class="pattern-lab__title">Messaging:</h4>
+          <?php get_template_part('templates/pattern-lab/messaging'); ?>
+      </div>
+
+      <div class="pattern-lab__section"> 
           <h4 class="pattern-lab__title">Photographs:</h4>
           <?php get_template_part('templates/pattern-lab/photos'); ?>
       </div>

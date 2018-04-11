@@ -24,17 +24,21 @@
 
 // Custom Form Styles
 
-label {
-    display: block;
-    font: bold 12px/1.4em $font-sans-serif;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+legend {
+    @include legend;
 }
 
-legend {
-    font: bold 12px/1.4em $font-sans-serif;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+form {
+    label {
+        @include label;
+        font-weight: 600;
+    }
+}
+
+fieldset {
+    label {
+        @include label;
+    }
 }
 
 input {
@@ -44,9 +48,12 @@ input {
         @include input-text();
     }
 
-    &[type="checkbox"], 
+    &[type="checkbox"] {
+        @include input-checkbox;
+    }
+
     &[type="radio"] {
-        margin-right: $global-spacer;
+        @include input-radio;
     }
 
     &::placeholder {
@@ -56,4 +63,8 @@ input {
 
 textarea {
     @include textarea;
+}
+
+select {
+    @include select;
 }

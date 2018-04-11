@@ -22,11 +22,11 @@
     <fieldset>
         <legend>Select your pizza toppings:</legend>
         <input id="ham" type="checkbox" name="toppings" value="ham">
-        <label for="ham">Ham</label><br>
+        <label for="ham">Ham</label>
         <input id="pepperoni" type="checkbox" name="toppings" value="pepperoni">
-        <label for="pepperoni">Pepperoni</label><br>
+        <label for="pepperoni">Pepperoni</label>
         <input id="mushrooms" type="checkbox" name="toppings" value="mushrooms">
-        <label for="mushrooms">Mushrooms</label><br>
+        <label for="mushrooms">Mushrooms</label>
         <input id="olives" type="checkbox" name="toppings" value="olives">
         <label for="olives">Olives</label>
     </fieldset>
@@ -38,9 +38,9 @@
     <fieldset>
         <legend>Choose a shipping method:</legend>
         <input id="overnight" type="radio" name="shipping" value="overnight">
-        <label for="overnight">Overnight</label><br>
+        <label for="overnight">Overnight</label>
         <input id="twoday" type="radio" name="shipping" value="twoday">
-        <label for="twoday">Two day</label><br>
+        <label for="twoday">Two day</label>
         <input id="ground" type="radio" name="shipping" value="ground">
         <label for="ground">Ground</label>
     </fieldset>

@@ -23,16 +23,16 @@
 @mixin base-h1() {
     margin-bottom: $global-spacer--2;
     font-family: $font-serif;
-    font-size: $font-extra-extra-large;
-    line-height: $font-extra-extra-large+10px;
+    font-size: $font-x4-large;
+    line-height: $font-x4-large+10px;
     color: $heading-primary;
 }
 
 @mixin base-h2() {
     margin-bottom: $global-spacer--2;
     font-family: $font-sans-serif;
-    font-size: $font-extra-large;
-    line-height: $font-extra-large+10px;
+    font-size: $font-x3-large;
+    line-height: $font-x3-large+10px;
     color: $heading-primary;
     letter-spacing: 0.5px;
 }
@@ -40,18 +40,19 @@
 @mixin base-h3() {
     margin-bottom: $global-spacer--three-halves;
     font-family: $font-sans-serif;
-    font-size: $font-large;
+    font-size: $font-x2-large;
     font-weight: 600;
     color: $heading-secondary;
     letter-spacing: 0.5px;
+    line-height: $font-x2-large+10px;
 }
 
 @mixin base-h4() {
     margin-bottom: $global-spacer--three-halves;
     font-family: $font-serif;
-    font-size: $font-large;
+    font-size: $font-x-large;
     font-style: italic;
-    line-height: $font-large;
+    line-height: $font-x-large+10px;;
     letter-spacing: 1px;
     font-weight: 600;
     color: $heading-primary;
@@ -60,8 +61,8 @@
 @mixin base-h5() {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
-    font-size: $font-medium;
-    line-height: 24px;
+    font-size: $font-large;
+    line-height: $font-large+10px;
     font-weight: 600;
     letter-spacing: 1px;
     color: $heading-primary;
@@ -70,10 +71,17 @@
 
 @mixin base-h6() {
     margin-bottom: $global-spacer;
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
     font-size: $font-medium;
-    line-height: 20px;
-    font-weight: 600;
+    line-height: $font-medium+10px;
+    font-weight: 400;
     letter-spacing: 1px;
     color: $heading-secondary;
+}
+
+@mixin messaging($state) {
+    width: 100%;
+    padding: $global-spacer--half $global-spacer;
+    color: $state;
+    background: rgba($state, 0.1);
 }
