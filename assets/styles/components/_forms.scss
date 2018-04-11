@@ -12,11 +12,13 @@
 
     .search-field {
         @extend .form-control;
+        color: $text-primary;
+
+        
     }
 
     .search-submit {
-        @extend .btn;
-        @extend .btn-secondary;
+        @include button-submit();
     }
 }
 
@@ -36,17 +38,19 @@ legend {
 }
 
 input {
+    @include base-p();
 
     &[type="text"] {
-        @extend p;
-        height: 35px;
-        border: 1px solid $black;
-        padding: $global-spacer $global-spacer--half;
+        @include input-text();
     }
 
     &[type="checkbox"], 
     &[type="radio"] {
         margin-right: $global-spacer;
+    }
+
+    &::placeholder {
+        color: $gray;
     }
 }
 

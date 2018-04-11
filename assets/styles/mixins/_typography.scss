@@ -1,0 +1,79 @@
+// Typography Mixins
+
+@mixin base-p() {
+    font-family: $font-sans-serif; 
+    letter-spacing: 0.08px;
+    line-height: 26px;
+    color: $text-primary;
+}
+
+@mixin base-link() {
+    color: $link;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $orange;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $orange;
+        border-color: $link;
+    }
+}
+
+@mixin base-h1() {
+    margin-bottom: $global-spacer--2;
+    font-family: $font-serif;
+    font-size: $font-extra-extra-large;
+    line-height: $font-extra-extra-large+10px;
+    color: $heading-primary;
+}
+
+@mixin base-h2() {
+    margin-bottom: $global-spacer--2;
+    font-family: $font-sans-serif;
+    font-size: $font-extra-large;
+    line-height: $font-extra-large+10px;
+    color: $heading-primary;
+    letter-spacing: 0.5px;
+}
+
+@mixin base-h3() {
+    margin-bottom: $global-spacer--three-halves;
+    font-family: $font-sans-serif;
+    font-size: $font-large;
+    font-weight: 600;
+    color: $heading-secondary;
+    letter-spacing: 0.5px;
+}
+
+@mixin base-h4() {
+    margin-bottom: $global-spacer--three-halves;
+    font-family: $font-serif;
+    font-size: $font-large;
+    font-style: italic;
+    line-height: $font-large;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: $heading-primary;
+}
+
+@mixin base-h5() {
+    margin-bottom: $global-spacer;
+    font-family: $font-sans-serif;
+    font-size: $font-medium;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $heading-primary;
+    text-transform: uppercase;
+}
+
+@mixin base-h6() {
+    margin-bottom: $global-spacer;
+    font-family: $font-serif;
+    font-size: $font-medium;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $heading-secondary;
+}

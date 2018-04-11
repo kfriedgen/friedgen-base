@@ -1,9 +1,33 @@
 // Form Mixins
 
 @mixin textarea {
-    @extend p;
+    @include base-p();
     width: 100%;
     padding: $global-spacer;
-    border: 1px solid $black;
+    border: 2px solid $gray;
     border-radius: 0;
+    background: $body-background;
+
+    &:focus {
+        border-color: $black;
+        background: $white;
+    }
+
+    &::placeholder {
+        color: $gray;
+    }
 }
+
+@mixin input-text {
+    @include base-p();
+    height: 40px;
+    border: 2px solid $gray;
+    padding: $global-spacer $global-spacer--half;
+    background: $body-background;
+
+    &:focus {
+        border-color: $black;
+        background: $white;
+    }
+}
+
