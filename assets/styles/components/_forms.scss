@@ -6,15 +6,11 @@
     @extend .form-inline;
 
     label {
-        @extend .form-group;
-        font-weight: normal;
+        @include label;
     }
 
     .search-field {
-        @extend .form-control;
-        color: $text-primary;
-
-        
+        @include input-text;
     }
 
     .search-submit {
