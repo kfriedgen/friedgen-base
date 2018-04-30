@@ -3,20 +3,48 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: $global-spacer 0;
 
     & li a {
+        padding: $global-spacer;
         font-family: $font-sans-serif;
-        font-size: $font-small;
+        font-size: $font-normal;
         font-weight: 600;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        color: $blue;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: $text-primary;
+        border-bottom: 2px solid $body-background;
 
         &:hover,
         &:focus {
-            color: $blue-dark;
-            border-color: $blue-dark;
+            border-color: $blue-light;
+        }
+    }
+
+    & li:nth-child(1) a {
+        &:hover,
+        &:focus {
+            border-color: $pink;
+        }
+    }
+
+    & li:nth-child(2) a {
+        &:hover,
+        &:focus {
+            border-color: $green-light;
+        }
+    }
+
+    & li:nth-child(3) a {
+        &:hover,
+        &:focus {
+            border-color: $yellow;
+        }
+    }
+
+    & li:nth-child(4) a {
+        &:hover,
+        &:focus {
+            border-color: $purple;
         }
     }
 }

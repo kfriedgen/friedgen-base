@@ -20,9 +20,10 @@
 
 @mixin input-text {
     @include base-p();
+    width: 100%;
     height: 40px;
     border: 2px solid $gray;
-    padding: $global-spacer $global-spacer--half;
+    padding: $global-spacer $global-spacer--three-halves;
     background: $body-background;
 
     &:focus {
@@ -47,6 +48,7 @@
 
 @mixin label {
     display: block;
+    width: 100%;
     margin-bottom: $global-spacer--half;
     font-family: $font-sans-serif;
     font-weight: normal;

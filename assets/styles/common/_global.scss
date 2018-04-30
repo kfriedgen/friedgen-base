@@ -8,6 +8,15 @@ body {
     background: $body-background;
 }
 
+article, 
+aside, 
+footer, 
+header, 
+nav, 
+section {
+    width: 100%;
+}
+
 img {
     width: 100%;
     max-width: auto;

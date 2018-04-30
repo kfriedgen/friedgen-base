@@ -3,12 +3,21 @@
 .logo {
 
     &__a {
+        padding: $global-spacer;
         font-family: $font-serif;
         font-size: $font-x-large;
         font-weight: 600;
         text-transform: lowercase;
         letter-spacing: 1px;
         color: $logo;
-        border-color: $body-background;
+        border-top: 2px dashed $body-background;
+        border-bottom: 2px dashed $body-background;
+
+        &:hover,
+        &:focus {
+            color: $logo;
+            border-top: 2px dashed $pink;
+            border-bottom: 2px dashed $orange;
+        }
     }
 }

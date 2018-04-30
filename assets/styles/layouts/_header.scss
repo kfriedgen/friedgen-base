@@ -1,24 +1,77 @@
 // Header Styles
 
 .header {
-    width: 100%;
+    display: block;
+    margin: $global-spacer--2 0;
 
-    &__container {}
-
-
-    &__top {
+    @include media-breakpoint-up(md) {
         display: flex;
         justify-content: space-between;
-        margin: $global-spacer auto;
+        align-items: center;
+        margin: $global-spacer 0;
+    }
+
+    &__outer {}
+
+
+    &__inner {
+        width: 100%;
+        margin-bottom: $global-spacer--2;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
     }
 
     &__logo {
-        display: flex;
+
+        &-outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.u-medium--show {
+                display: none;
+
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                }
+            }
+
+            &.u-medium--hide {
+                display: flex;
+                
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+            }
+        }
     }
 
     &__search {
 
+        &-outer {
+            width: 100%;
+            
+            @include media-breakpoint-up(md) {
+                width: 80%;
+            }
+        }
+
+        .search-submit {
+            width: 50%;
+        }
+
     }
 
-    &__navigation {}
+    &__navigation {
+
+        &-outer {
+            width: 100%;
+            
+            @include media-breakpoint-up(md) {
+                width: 80%;
+            }
+        }
+    }
 }

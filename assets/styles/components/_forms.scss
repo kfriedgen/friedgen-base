@@ -4,17 +4,21 @@
 
 .search-form {
     @extend .form-inline;
+    flex-flow: row;
 
     label {
         @include label;
+        margin: 0 $global-spacer 0 0;
     }
 
     .search-field {
         @include input-text;
+        margin: 0;
     }
 
     .search-submit {
         @include button-submit();
+        margin: 0;
     }
 }
 

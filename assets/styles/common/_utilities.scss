@@ -1,0 +1,54 @@
+// Utilities
+
+.u {
+
+    &-small {
+
+        &--show {
+            display: block;
+        }
+
+        &--hide {
+            display: none;
+        }
+    }
+
+    &-medium {
+
+        &--show {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+        }
+
+        &--hide {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+    }
+
+    &-large {
+
+        &--show {
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+        }
+
+        &--hide {
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+    }
+
+}
