@@ -2,7 +2,7 @@
 
 @mixin base-p() {
     font-family: $font-sans-serif; 
-    letter-spacing: 0.08px;
+    letter-spacing: 0.2px;
     line-height: 26px;
     color: $text-primary;
 }
@@ -45,6 +45,7 @@
     color: $heading-secondary;
     letter-spacing: 0.5px;
     line-height: $font-x2-large+10px;
+    letter-spacing: 1px;
 }
 
 @mixin base-h4() {

@@ -1,0 +1,63 @@
+// Homepage
+
+.homepage {
+
+    &__inner {
+        max-width: 1024px;
+        margin: $global-spacer auto $global-spacer--3 auto;
+        padding: 0 $global-spacer--three-halves;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: $global-spacer--5;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: $global-spacer--10;
+        }
+    }
+    
+    &__introduction {
+
+        @include media-breakpoint-up(md) {
+            padding: 0 $global-spacer--8;
+        }
+
+        p {
+            @include base-h4();
+            font-weight: 300;
+
+            @include media-breakpoint-up(md) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__featured {
+        margin-bottom: $global-spacer--5;
+        background: $blue;
+
+        @include media-breakpoint-up(md) {
+            height: 520px;
+        }
+
+
+        &-inner {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1024px;
+            margin: auto;
+            padding: $global-spacer--2;
+
+            @include media-breakpoint-up(sm) {
+                flex-flow: row nowrap;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: $global-spacer--2 $global-spacer--2 0 $global-spacer--2;
+            }
+        }
+    }
+}
