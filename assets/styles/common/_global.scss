@@ -84,10 +84,12 @@ a {
 }
 
 ::-moz-selection { /* Code for Firefox */
+    color: $black;
     background: $highlight;
 }
 
 ::selection { 
+    color: $black;
     background: $highlight;
 }
 

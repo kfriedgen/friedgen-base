@@ -1,0 +1,100 @@
+// Pages
+
+.page {
+
+    &__title {
+        display: none;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 960px;
+        margin: $global-spacer--2 auto $global-spacer--3;
+        padding: 0 $global-spacer--2;
+        text-align: center;
+
+        @include media-breakpoint-up(sm) {
+            padding: 0;
+        }
+
+        p {
+            @include base-h4();
+            color: $gray;
+        }
+    }
+
+    &__feature {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        max-width: 960px;
+        margin: auto auto $global-spacer--10 auto;
+
+        @include media-breakpoint-up(sm) {
+            flex-flow: row wrap;
+        }
+
+        h4,
+        h6 {
+            padding: 0 $global-spacer--2;
+
+            @include media-breakpoint-up(sm) {
+                padding: 0;
+            }
+
+            a {
+                border: none;
+            }
+        }
+
+        h4 {
+
+            a {
+                color: $black;
+            }
+        }
+
+        h6 {
+
+            a {
+                color: $gray;
+            }
+        }
+    }
+}
+
+.design,
+.photography {
+
+    &_feature {
+        width: 100%;
+        margin: 0 0 $global-spacer--3 0;
+
+        @include media-breakpoint-up(sm) {
+            width: 50%;
+            padding: $global-spacer--2;
+        }
+
+        &:nth-child(3) {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            border: none;
+        }
+
+        &:hover,
+        &:focus {
+            
+            a {
+                color: $orange;
+            }
+        }
+    }
+
+    &__title {
+        display: none;
+    }
+}

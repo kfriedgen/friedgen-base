@@ -5,10 +5,11 @@
     &__inner {
         max-width: 1024px;
         margin: $global-spacer auto $global-spacer--3 auto;
-        padding: 0 $global-spacer--three-halves;
+        padding: $global-spacer--2 $global-spacer--3;
 
         @include media-breakpoint-up(sm) {
             margin-bottom: $global-spacer--5;
+            padding: 0 $global-spacer--three-halves;
         }
 
         @include media-breakpoint-up(md) {

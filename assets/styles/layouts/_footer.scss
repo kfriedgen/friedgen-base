@@ -7,11 +7,30 @@ footer {
 
     .container {
         display: flex;
-        justify-content: space-between;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(md) { 
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    .widget_nav_menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: $global-spacer--3;
+
+        @include media-breakpoint-up(md) { 
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
     }
 
     .menu {
         display: flex;
+        width: 100%;
         margin: 0;
         padding: 0;
         list-style-type: none;

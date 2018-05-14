@@ -9,5 +9,10 @@
 
 .zoom-social-icons-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: wrap;
+
+    @include media-breakpoint-up(md) {
+        justify-content: space-between;
+    }
 }

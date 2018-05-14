@@ -30,4 +30,32 @@ function introduction() {
 
 }
 add_action( 'widgets_init', 'introduction' );
+
+function design_feature() {
+
+    register_sidebar( array(
+        'name'          => 'Design Projects',
+        'id'            => 'design-feature',
+        'before_widget' => '<div class="design_feature">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="design__title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'design_feature' );
+
+function photography_feature() {
+
+    register_sidebar( array(
+        'name'          => 'Photography Projects',
+        'id'            => 'photography-feature',
+        'before_widget' => '<div class="photography_feature">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="photography__title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'photography_feature' );
 ?>

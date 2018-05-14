@@ -2,7 +2,13 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex-flow: wrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+        justify-content: space-between;
+        flex-flow: nowrap;
+    }
 
     & li a {
         padding: $global-spacer;
@@ -10,6 +16,7 @@
         font-size: $font-normal;
         font-weight: 600;
         letter-spacing: 1px;
+        line-height: 30px;
         text-transform: capitalize;
         color: $text-primary;
         border-bottom: 2px solid $body-background;
