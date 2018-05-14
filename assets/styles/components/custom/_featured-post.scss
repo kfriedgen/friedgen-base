@@ -1,37 +1,91 @@
 // Featured Post
 
 .featured-post {
-    margin-bottom: $global-spacer--5;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 0;
+    padding: $global-spacer--3 0;
+    background: $pink-dark;
 
-    &__title {
-        margin-bottom: $global-spacer--4;
+    @include media-breakpoint-up(sm) {
+        flex-flow: row nowrap;
     }
 
-    &__image {
-        height: 523px;
-        background-size: 100%;
-
-        &--link {
-        }
+    @include media-breakpoint-up(md) {
+        margin-top: -10px;
     }
 
-    &__a {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 0;
-        border: none;
+    p {
+        color: $white;
     }
 
     &__inner {
-        max-width: 80%;
-        padding: $global-spacer--2 $global-spacer--4;
-        background: rgba($body-background, 1);
+        padding: $global-spacer--2;
+
+        &:nth-child(1) {
+            max-width: 540px;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                max-width: 540px;
+            }
+
+
+            @include media-breakpoint-up(lg) {
+                margin: $global-spacer--3 $global-spacer--2;
+            }
+
+        }
+    }
+
+    &__photo {
+        display: block;
+        padding: 0;
+        border: 20px solid $body-background;
+
+        &:hover,
+        &:focus {
+            border: 20px solid $body-background;
+        }
+
+        &-outer {
+            border: 1px solid $gray;
+        }
+    }
+
+    &__title {
+        color: $white;
+    }
+
+    &__excerpt {
+
+        a {
+            display: none;
+        }   
+    }
+
+    &__read-more {
+        @include button-text;
+        display: block;
+        color: $white;
+        border: 2px solid $white;
+        text-align: center;
 
         @include media-breakpoint-up(sm) {
-            max-width: 50%;
+            display: inline-block;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: $pink-dark;
+            border-color: $pink-dark;
         }
     }
 }

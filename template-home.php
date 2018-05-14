@@ -34,6 +34,14 @@
 
         </div>
 
+        <div class="homepage__tertiary">
+            
+            <div class="homepage__more-posts">
+                <?php get_template_part('templates/home/secondary-recent-posts'); ?>
+            </div>
+
+        </div>
+
     </div>
     
 <?php endwhile; ?>

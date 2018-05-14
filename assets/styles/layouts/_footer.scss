@@ -1,0 +1,33 @@
+// Footer
+
+footer {
+    width: 100%;
+    padding: $global-spacer--2;
+    background: $black;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        &-item {
+            margin-right: $global-spacer--2;
+
+            a {
+                color: $white;
+                border: none;
+
+                &:hover,
+                &:focus {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

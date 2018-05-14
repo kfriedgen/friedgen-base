@@ -1,7 +1,9 @@
+<h4 class="recent-posts__title">Recent Writings</h4>
+
 <div class="recent-posts__outer">
 
     <?php
-        $args = array( 'numberposts' => '3', 'offset' => 1 );
+        $args = array( 'numberposts' => '4' );
         $postslist = get_posts( $args );
         foreach ( $postslist as $post ) :
           setup_postdata( $post ); ?> 
@@ -14,7 +16,7 @@
                 $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
             <?php endif; ?>
 
-            <a class="recent-posts__image--link" href="<?php the_permalink(); ?>">
+            <a class="recent-posts__image-link" href="<?php the_permalink(); ?>">
                 <?php echo the_post_thumbnail();  ?>
             </a>
                     
