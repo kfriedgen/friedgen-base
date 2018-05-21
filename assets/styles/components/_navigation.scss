@@ -6,8 +6,12 @@
     justify-content: center;
 
     @include media-breakpoint-up(sm) {
-        justify-content: space-between;
+        justify-content: space-around;
         flex-flow: nowrap;
+    }
+
+    @include media-breakpoint-up(lg) {
+        justify-content: space-between;
     }
 
     & li a {
@@ -52,6 +56,28 @@
         &:hover,
         &:focus {
             border-color: $purple;
+        }
+    }
+
+    & li {
+
+        &.current-menu-item a {
+
+            .design & {
+                border-color: $pink;
+            }
+
+            .photography-2 & {
+                border-color: $green-light;
+            }
+
+            .about-2 & {
+                border-color: $yellow;
+            }
+
+            .blog & {
+                border-color: $purple;
+            }
         }
     }
 }
