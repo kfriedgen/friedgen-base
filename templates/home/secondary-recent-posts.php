@@ -20,8 +20,7 @@
                 <?php echo the_post_thumbnail();  ?>
             </a>
                     
-            <a class="recent-posts__link" href="<?php the_permalink(); ?>">
-                <?php the_title(); ?> 
+            <a class="recent-posts__link" href="<?php the_permalink(); ?>"><?php the_title(); ?> 
             </a>
 
         </div>

@@ -62,8 +62,8 @@
 @mixin base-h5() {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
-    font-size: $font-large;
-    line-height: $font-large+10px;
+    font-size: $font-medium;
+    line-height: $font-medium+10px;
     font-weight: 600;
     letter-spacing: 1px;
     color: $heading-primary;
@@ -73,8 +73,8 @@
 @mixin base-h6() {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
-    font-size: $font-medium;
-    line-height: $font-medium+10px;
+    font-size: $font-normal;
+    line-height: $font-normal+10px;
     font-weight: 400;
     letter-spacing: 1px;
     color: $heading-secondary;
