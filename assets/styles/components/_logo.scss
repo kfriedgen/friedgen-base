@@ -3,7 +3,7 @@
 .logo {
 
     &__a {
-        padding: $global-spacer;
+        padding: $global-spacer 7px $global-spacer $global-spacer;
         font-family: $font-serif;
         font-size: $font-x-large;
         font-weight: 600;
@@ -11,14 +11,20 @@
         letter-spacing: 1px;
         color: $logo;
         text-align: center;
-        border-top: 2px dashed $body-background;
-        border-bottom: 2px dashed $body-background;
+        border-bottom: 2px double $body-background;
+        
+        @keyframes slow-background {
+            from {background-color: $body-background;}
+            to {background-color: $blue-light;}
+        }
 
         &:hover,
         &:focus {
             color: $logo;
-            border-top: 2px dashed $pink;
-            border-bottom: 2px dashed $orange;
+            background: $blue-light;
+            border-bottom: 2px double $blue-light;
+            animation-name: slow-background;
+            animation-duration: 4s;
         }
     }
 }

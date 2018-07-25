@@ -1,7 +1,8 @@
 // Typography Mixins
 
 @mixin base-p() {
-    font-family: $font-sans-serif; 
+    font-family: $font-sans-serif;
+    font-size: $font-normal; 
     letter-spacing: 0.2px;
     line-height: 26px;
     color: $text-primary;
