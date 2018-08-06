@@ -1,0 +1,16 @@
+// Blog Patterns
+
+@mixin blog-preview-title {
+    @include base-p();
+    font-family: $font-primary;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: none;
+}
+
+@mixin blog-preview-date {
+    font-family: $font-sans-serif;
+    font-size: $font-x-small;
+    letter-spacing: 0.5px;
+    color: $gray;
+}

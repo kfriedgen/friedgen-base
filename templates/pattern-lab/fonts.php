@@ -1,9 +1,9 @@
 <!-- Font Examples -->
 
 <div class="font">
-    <p class="font__primary">Primary font: 'Source Sans Pro', Arial, sans-serif;</p>
-    <p class="font__primary"><em>Primary font italic: 'Source Sans Pro', Arial, sans-serif;</em></p>
-    <p class="font__primary"><strong>Primary font bold: 'Source Sans Pro', Arial, sans-serif;</strong></p>
+    <p class="font__primary">Primary font: 'Open Sans', sans-serif;</p>
+    <p class="font__primary"><em>Primary font italic: 'Open Sans', sans-serif;</em></p>
+    <p class="font__primary"><strong>Primary font bold: 'Open Sans', sans-serif;</strong></p>
 </div>
 
 <div class="font">
@@ -13,7 +13,7 @@
 </div>
 
 <div class="font">
-    <p class="font__tertiary">Tertiary font: Georgia, serif;</p>
-    <p class="font__tertiary"><em>Tertiary font italic: Georgia, serif;</em></p>
-    <p class="font__tertiary"><strong>Tertiary font bold; Georgia, serif;</strong></p>
+    <p class="font__tertiary">Tertiary font: Courier, sans-serif;</p>
+    <p class="font__tertiary"><em>Tertiary font italic: Courier, sans-serif;</em></p>
+    <p class="font__tertiary"><strong>Tertiary font bold; Courier, sans-serif;</strong></p>
 </div>

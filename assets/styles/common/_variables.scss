@@ -1,6 +1,6 @@
 // Grid settings
 $main-sm-columns:       12;
-$sidebar-sm-columns:    2;
+$sidebar-sm-columns:    3;
 
 // Spacing
 $global-spacer--half:           5px;
@@ -23,9 +23,11 @@ $z-index-background:            0;
 // Colors
 $black: #2d2d2d;
 $white: #ffffff;
-$gray: #b7b7b7;
-$gray-dark: #818181;
-$gray-lightest: #f6f5f4;
+$white-transparent: rgba($white,0.8);
+$gray: #656165;
+$gray-dark: #444444;
+$gray-light: #cccccc;
+$gray-lightest: #faf7f3;
 $blue-dark: #4b636e; // temp
 $blue: #375053;
 $blue-light: #b2d5d9;
@@ -34,41 +36,47 @@ $red: #a3393b;
 $red-dark: #7f0000; // temp
 $red-light: #f05545; // temp
 $pink: #cb8384;
-$pink-dark: #ac606f; 
+$pink-dark: #96394f; 
 $yellow: #f2c67f;
 $orange: #e3864a;
 $purple: #674962;
 $green: #455d44;
 $green-light: #a6c4a5;
 
+// Brand
+$logo: $black;
+$primary: $pink-dark;
+$secondary: $purple;
+$tertiary: $orange;
+$quadrary: $blue-light;
+
 // UX Colors 
 $body-background: $gray-lightest;
 $text-primary: $black;
 $heading-primary: $black;
 $heading-secondary: $gray-dark;
-$link: $pink-dark;
-$hover: $orange;
+$link: $primary;
+$hover: $secondary;
 
 $disabled: $gray;
 $highlight: $blue-light;
 $error: $red;
-$warning: $orange;
+$warning: #913000;
 $success: $green;
-
-// Brand
-$logo: $black;
+$information: $blue;
 
 
 // Typefaces
-$font-sans-serif:           'Source Sans Pro', Arial, sans-serif;
+$font-sans-serif:           'Open Sans', Arial, sans-serif;
 $font-serif:                'Cormorant Garamond', Georgia, serif;
-$font-primary:              'Source Sans Pro', Arial, sans-serif;
+$font-primary:              $font-sans-serif;
 $font-secondary:            'Cormorant Garamond', Georgia, serif;
-$font-tertiary:             Georgia, serif;
+$font-tertiary:             Courier, sans-serif;
 
 // Font Size
 
-$font-x-small:              11.237px;
+$font-x2-small:            11.237px;
+$font-x-small:              12.642px;
 $font-small:                14.222px;
 $font-normal:               16px;
 $font-medium:               18px;

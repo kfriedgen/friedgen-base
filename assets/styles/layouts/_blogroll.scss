@@ -1,0 +1,78 @@
+// Blogroll
+
+.blog {
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .page-header {
+        display: none;
+    }
+}
+
+.blogroll {
+
+    &__single {
+        width: 100%;
+        border-bottom: none;
+    }
+
+    &__link {
+
+    }
+
+    &__feature {
+
+        &-outer {
+            width: 100%;
+            border-bottom: 1px solid $gray-light;
+            margin-bottom: $global-spacer--4;
+        }
+
+        &-image {
+            margin-bottom: $global-spacer--2;
+            height: 460px;
+            overflow: hidden;
+        }
+    }
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $global-spacer--4;
+    }
+
+    &__category {
+        @include base-caption();
+        text-align: right;
+    }
+
+    &__title {
+        @include base-h1();
+        margin: 0 $global-spacer--2 0 0;
+    }
+
+    &__date {
+        text-align: right;
+
+        &-outer {
+            margin: 0 $global-spacer--2 0 0;
+        }
+    }
+}

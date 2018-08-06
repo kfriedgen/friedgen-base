@@ -8,6 +8,7 @@
 @import "mixins/typography";
 @import "mixins/forms";
 @import "mixins/buttons";
+@import "mixins/blog-patterns";
 
 @import "common/global";
 
@@ -33,5 +34,6 @@
 @import "layouts/posts";
 @import "layouts/tinymce";
 @import "layouts/gallery";
+@import "layouts/blogroll";
 
 @import "common/utilities";

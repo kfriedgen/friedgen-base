@@ -16,17 +16,18 @@
 
     & li a {
         padding: $global-spacer;
-        font-family: $font-sans-serif;
-        font-size: $font-normal;
+        font-family: $font-primary;
+        font-size: $font-x-small;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
         line-height: 30px;
-        text-transform: capitalize;
-        color: $text-primary;
+        text-transform: uppercase;
+        color: $gray;
         border-bottom: 2px solid $body-background;
 
         &:hover,
         &:focus {
+            color: $black;
             border-color: $blue-light;
         }
     }
@@ -62,6 +63,7 @@
     & li {
 
         &.current-menu-item a {
+            color: $black;
 
             .design & {
                 border-color: $pink;

@@ -37,18 +37,15 @@
             padding: 0 $global-spacer--4 0 0;
         }
 
-        @include media-breakpoint-up(lg) {
-            top: -50px;
-        }
+        @include media-breakpoint-up(lg) {}
     }
 
     &:nth-child(2) {
         order: 1;
         margin-bottom: $global-spacer--2;
-        border: 1px solid $gray; 
+        border: 1px solid $gray-light; 
         
         @include media-breakpoint-up(md) {
-            top: -80px;
             order: 2;
             margin-bottom: 0;
         }
