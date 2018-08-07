@@ -93,6 +93,7 @@ function display_sidebar() {
     is_page('design'),
     is_page('photography-2'),
     is_page('about-2'),
+    is_single(),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

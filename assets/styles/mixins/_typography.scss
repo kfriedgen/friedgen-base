@@ -20,6 +20,22 @@
     }
 }
 
+@mixin title-link() {
+    font-family: $font-sans-serif;
+    font-size: $font-x-small;
+    font-weight: 600;
+    color: $text-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    border-color: $body-background;
+
+    &:hover,
+    &:focus {
+        color: $hover;
+        border-color: $link;
+    }
+}
+
 @mixin base-caption() {
     font-size: $font-x2-small;
     letter-spacing: 0.5px;

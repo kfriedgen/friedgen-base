@@ -7,7 +7,7 @@
 .main {
     @include make-col-ready();
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         @include make-col($main-sm-columns);
         
         .sidebar-primary & {
@@ -19,7 +19,7 @@
 .sidebar {
     @include make-col-ready();
     
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         @include make-col($sidebar-sm-columns);
     }
 }
