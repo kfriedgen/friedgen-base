@@ -37,7 +37,7 @@
     &__feature-image {
         width: 100%;
         overflow: hidden;
-        margin-bottom: $global-spacer--2;
+        margin-bottom: $global-spacer--3;
 
         @include media-breakpoint-up(lg) {
             height: 485px;
@@ -46,6 +46,7 @@
 
     &__date {
         @include base-h6();
+        word-wrap: break-word;
     }
 
     &__content {
@@ -56,8 +57,8 @@
     &__title {}
 
     &__sidebar {
-        margin-left: $global-spacer--3;
-        padding-left: $global-spacer--3;
+        margin-left: $global-spacer--5;
+        padding-left: $global-spacer--4;
         border-left: 1px solid $gray-light;
     }
 
