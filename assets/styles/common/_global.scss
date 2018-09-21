@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     @extend p;
     margin: 0;
@@ -20,6 +25,10 @@ section {
 
 .main {
     padding: 0!important;
+}
+
+.aligncenter {
+    margin: 0 auto!important;
 }
 
 img {

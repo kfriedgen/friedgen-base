@@ -1,6 +1,7 @@
 // Typography Mixins
 
 @mixin base-p() {
+    margin-bottom: 2rem;
     font-family: $font-tertiary;
     font-size: $font-normal; 
     line-height: 26px;

@@ -7,7 +7,7 @@
     &__outer {
         padding: 0;
 
-        @include media-breakpoint-up(lg) {
+        @media only screen and (min-width: 992px) {  
             padding: 0 $global-spacer--2;
         }
     }
@@ -18,8 +18,11 @@
             display: flex;
             flex-flow: column;
             justify-content: center;
+            margin-bottom: $global-spacer--3;
+            padding: 0;
 
-            @include media-breakpoint-up(lg) {
+            @media only screen and (min-width: 1200px) {
+                padding: 0 10.5% 0 0;
                 flex-flow: row;
                 margin-bottom: $global-spacer--5;
             }
@@ -30,16 +33,43 @@
         display: flex;
         flex-flow: column;
 
-        @include media-breakpoint-up(lg) {
+        @media only screen and (min-width: 900px) {
             flex-flow: row;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding: 0 $global-spacer--2;
+
+            @media only screen and (min-width: 960px) {
+                padding: 0 25px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                padding: 0;
+            }
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: $global-spacer--2;
         }
     }
 
     &__header {
         width: 100%;
+        padding: 0;
         
-        @include media-breakpoint-up(lg) {
-            max-width: 110px;
+        @media only screen and (min-width: 1200px) {
+            max-width: 160px;
         }
     }
 
@@ -47,8 +77,9 @@
         width: 100%;
         overflow: hidden;
         margin-bottom: $global-spacer--3;
+        background-color: $yellow;
 
-        @include media-breakpoint-up(lg) {
+        @media only screen and (min-width: 768px) {
             height: 485px;
         }
     }
@@ -56,27 +87,46 @@
     &__date {
         @include base-h6();
         word-wrap: break-word;
+        padding: 0 $global-spacer--three-halves;
+        text-align: center;
 
-        @include media-breakpoint-up(lg) {
-            padding-right: $global-spacer;
-            text-align: right;
+        @media only screen and (min-width: 768px) {
+            padding: 0 $global-spacer--2;
+            text-align: left;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            padding-left: $global-spacer--half;
         }
     }
 
     &__content {
 
-        &-outer {}
+        &-outer {
+            width: 100%;
+        }
     }
 
     &__title {}
 
     &__sidebar {
 
-        @include media-breakpoint-up(lg) {
+        @media only screen and (min-width: 900px) {
             margin-left: $global-spacer--5;
-            padding-left: $global-spacer--4;
+            padding: 0 $global-spacer--3;
             border-left: 1px solid $gray-light;
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding: 0;
+        }
+
     }
 
     &__pagination {
@@ -86,9 +136,11 @@
         margin-bottom: 100px;
         text-align: center;
 
+
         @include media-breakpoint-up(md) {
             flex-flow: row;
             justify-content: space-between;
+            margin: 0 $global-spacer--2 100px;
         }
 
 
@@ -116,6 +168,12 @@
             @include base-h2();
             font-size: $font-large;
             color: $link;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                    border-color: $link;
+                }
         }
     }
 

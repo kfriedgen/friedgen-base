@@ -133,6 +133,7 @@
             margin-bottom: $global-spacer--2;
             height: 240px;
             overflow: hidden;
+            background-color: $yellow;
 
             @include media-breakpoint-up(lg) {
                 height: 400px;
