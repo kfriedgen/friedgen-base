@@ -58,6 +58,15 @@ h6,
     @include base-h6();
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-primary;
+}
+
 p,
 ul,
 ol,
@@ -81,6 +90,18 @@ blockquote {
 
 a {
     @include base-link();
+
+    &:hover,
+    &:focus {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $link;
+        }
+    }
 }
 
 ::-moz-selection { /* Code for Firefox */

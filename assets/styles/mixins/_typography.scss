@@ -48,25 +48,22 @@
     font-size: $font-x3-large;
     line-height: $font-x3-large+10px;
     letter-spacing: 1px;
-    color: $heading-primary;
 }
 
 @mixin base-h2() {
     margin-bottom: $global-spacer--2;
-    font-family: $font-serif;
-    font-style: italic;
-    font-size: $font-x2-large;
-    line-height: $font-x2-large+10px;
-    color: $heading-primary;
+    font-family: $font-sans-serif;
+    font-size: $font-x-large;
+    font-weight: 600;
+    line-height: $font-x-large+10px;
     letter-spacing: 0.5px;
 }
 
 @mixin base-h3() {
     margin-bottom: $global-spacer--three-halves;
-    font-family: $font-sans-serif;
+    font-family: $font-serif;
     font-size: $font-x2-large;
     font-weight: 600;
-    color: $heading-secondary;
     line-height: $font-x2-large+10px;
     letter-spacing: 0.5px;
 }
@@ -74,26 +71,14 @@
 @mixin base-h4() {
     margin-bottom: $global-spacer--three-halves;
     font-family: $font-sans-serif;
-    font-size: $font-x-large;
-    font-style: italic;
-    line-height: $font-x-large*1.6;
+    font-size: $font-large;
+    line-height: $font-large*1.6;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 600;
     color: $heading-primary;
 }
 
 @mixin base-h5() {
-    margin-bottom: $global-spacer;
-    font-family: $font-tertiary;
-    font-size: $font-large;
-    line-height: $font-large+10px;
-    font-weight: 600;
-    letter-spacing: 1.3px;
-    color: $heading-primary;
-    text-transform: uppercase;
-}
-
-@mixin base-h6() {
     margin-bottom: $global-spacer;
     font-family: $font-sans-serif;
     font-size: $font-large;
@@ -102,7 +87,15 @@
     font-style: italic;
     text-transform: lowercase;
     letter-spacing: 0.5px;
-    color: $heading-primary;
+}
+
+@mixin base-h6() {
+    margin-bottom: $global-spacer;
+    font-family: $font-tertiary;
+    font-size: $font-medium;
+    line-height: $font-large+10px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 @mixin messaging($state) {

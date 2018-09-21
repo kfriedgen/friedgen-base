@@ -5,7 +5,11 @@
     margin:auto;
 
     &__outer {
-        padding: 0 $global-spacer--2;
+        padding: 0;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 $global-spacer--2;
+        }
     }
 
     &__main {
@@ -14,16 +18,21 @@
             display: flex;
             flex-flow: column;
             justify-content: center;
-            margin-bottom: $global-spacer--5;
 
             @include media-breakpoint-up(lg) {
                 flex-flow: row;
+                margin-bottom: $global-spacer--5;
             }
         }
     }
 
     &__inner {
         display: flex;
+        flex-flow: column;
+
+        @include media-breakpoint-up(lg) {
+            flex-flow: row;
+        }
     }
 
     &__header {
@@ -47,6 +56,11 @@
     &__date {
         @include base-h6();
         word-wrap: break-word;
+
+        @include media-breakpoint-up(lg) {
+            padding-right: $global-spacer;
+            text-align: right;
+        }
     }
 
     &__content {
@@ -57,9 +71,12 @@
     &__title {}
 
     &__sidebar {
-        margin-left: $global-spacer--5;
-        padding-left: $global-spacer--4;
-        border-left: 1px solid $gray-light;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: $global-spacer--5;
+            padding-left: $global-spacer--4;
+            border-left: 1px solid $gray-light;
+        }
     }
 
     &__pagination {

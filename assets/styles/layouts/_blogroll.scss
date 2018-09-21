@@ -147,9 +147,8 @@
         padding: 0 $global-spacer--2 $global-spacer--2;
 
         @include media-breakpoint-up(lg) {
-            flex-flow: row;
-            justify-content: space-between;
-            margin-bottom: $global-spacer--4;
+            display: block;
+            margin-bottom: $global-spacer--3;
             padding: 0;
         }
     }
@@ -165,21 +164,20 @@
 
 
         @include media-breakpoint-up(lg) {
-            margin: 0 $global-spacer--2 0 0;
+            margin: 0 0 $global-spacer 0;
             text-align: left;
-       
         }
     }
 
     &__date {
-        text-align: right;
+        text-align: left;
+
+        @include media-breakpoint-up(lg) {
+            text-align: right;
+        }
 
         &-outer {
-            padding: 0 $global-spacer--2;
-
-            @include media-breakpoint-up(lg) {
-                margin: 0 $global-spacer--2 0 0;
-            }
+            padding: 0 $global-spacer;
         }
     }
 }

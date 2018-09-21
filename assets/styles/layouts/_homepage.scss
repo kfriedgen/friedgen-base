@@ -54,10 +54,11 @@
 
             @include media-breakpoint-up(sm) {
                 flex-flow: row nowrap;
+                padding: $global-spacer--2 $global-spacer--2 0 $global-spacer--2;
             }
 
             @include media-breakpoint-up(lg) {
-                padding: $global-spacer--2 $global-spacer--2 0 $global-spacer--2;
+                padding: $global-spacer--2 0 0;
             }
         }
     }
