@@ -58,4 +58,18 @@ function photography_feature() {
 
 }
 add_action( 'widgets_init', 'photography_feature' );
+
+function about_sidebar() {
+
+    register_sidebar( array(
+        'name'          => 'About Sidebar',
+        'id'            => 'about-sidebar',
+        'before_widget' => '<div class="about__sidebar">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="about-sidebar__title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'about_sidebar' );
 ?>

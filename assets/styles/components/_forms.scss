@@ -48,7 +48,8 @@ fieldset {
 input {
     @include base-p();
 
-    &[type="text"] {
+    &[type="text"],
+    &[type="email"] {
         @include input-text();
     }
 
@@ -63,6 +64,11 @@ input {
     &::placeholder {
         color: $gray;
     }
+
+    &[type="submit"] {
+        @include button-submit();
+        margin: 0;
+    }
 }
 
 textarea {
@@ -71,4 +77,21 @@ textarea {
 
 select {
     @include select;
+}
+
+// Ninja Form Styles
+
+.nf-error {
+
+    .ninja-forms-field {
+        border: 2px solid $error!important;
+    }
+
+    &-msg {
+        color: $error!important;
+    }
+}
+
+.ninja-forms-req-symbol {
+    color: $error!important;
 }

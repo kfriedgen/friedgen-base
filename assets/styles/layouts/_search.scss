@@ -1,6 +1,7 @@
 // Search
 
-.search-results {
+.search-results,
+.category {
 
     .main {
         display: flex;
@@ -10,6 +11,12 @@
     .page-header {
         flex: 4 100%;
         padding: 0 $global-spacer--three-halves;
+        text-align: center; 
+
+
+            @media only screen and (min-width: 992px) {  
+                text-align: left;
+            }
     }
 
     .content {
@@ -52,29 +59,41 @@
     }
 }
 
-.search {
+.search,
+.category {
         
-        &__inner {
+        &__inner,
+        .blogroll__single {
             flex: 1 300px;
             margin: 0 $global-spacer--three-halves $global-spacer--3;
             text-align: center;
         }
 
+        .blogroll__single {
+            width: 100%;
+            padding: 0;
+        }
+
         &__outer {}
+
+        .blogroll__feature-outer {
+            margin: 0;
+            border: none;
+        }
 
         &__header {}
 
-        &__feature-image {
+        &__feature-image,
+        .blogroll__feature-image {
             width: 100%;
-            height: fit-content;
-            min-height: 190px;
-            max-height: 220px;
+            height: 150px;
             margin-bottom: $global-spacer;
             overflow: hidden;
             background-color: rgba($pink-dark, 0.4);
         }
 
-        &__title {
+        &__title,
+        .blogroll__title {
             margin-bottom: $global-spacer;
             font-family: $font-sans-serif;
             font-size: $font-normal;
@@ -86,7 +105,8 @@
 
         &__link {}
 
-        &__date {
+        &__date,
+        .blogroll__date {
             @include blog-preview-date();
         }
 
