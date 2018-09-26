@@ -2,11 +2,48 @@
 
 .sidebar {
     width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-around;
+
+    @media only screen and (min-width: 768px) {
+        flex-flow: wrap row;
+    }
+
+    @media only screen and (min-width: 900px) {
+        width: 60%;
+        padding: 0 25px;
+        border-left: 1px solid $gray-light;
+    }
+
+    @media only screen and (min-width: 992px) {
+        display: block;
+    }
 
     .widget {
+        width: 100%;
         margin-bottom: $global-spacer--3;
         padding-bottom: $global-spacer--3;
         border-bottom: 1px solid $gray-light;
+            
+        @media only screen and (min-width: 768px) {
+            width: 45%;
+            border-bottom: none;
+
+            &:first-child {
+                width: 100%;
+                border-bottom: 1px solid $gray-light;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            width: 100%;
+            border-bottom: 1px solid $gray-light;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
 
         h3 {
             @include base-h6();

@@ -13,10 +13,9 @@
         padding: 0 $global-spacer--three-halves;
         text-align: center; 
 
-
-            @media only screen and (min-width: 992px) {  
-                text-align: left;
-            }
+        @media only screen and (min-width: 992px) {
+            text-align: left;
+        }
     }
 
     .content {
@@ -24,7 +23,17 @@
     }
 
     .posts-navigation {
-        margin-bottom: $global-spacer--5;
+        width: 100%;
+        margin: 0 0 $global-spacer--4 0;
+        padding: $global-spacer--4 $global-spacer--2 $global-spacer--4;
+        border-top: 1px solid $gray-light;
+        border-bottom: 1px solid $gray-light;
+
+        @include media-breakpoint-up(lg) {
+            padding: $global-spacer--4 0 0;
+            margin: 0 $global-spacer--three-halves;
+            border-bottom: none;
+        }
     }
     
     .nav {
@@ -33,8 +42,12 @@
             display: flex;
             flex-flow: row;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             padding: 0 $global-spacer--three-halves;
+
+            @include media-breakpoint-up(sm) {
+                justify-content: space-between;
+            }
 
             a {
                 @include title-link();
@@ -50,7 +63,8 @@
         }
 
         &-next {
-
+            margin-left: $global-spacer--10;
+            
             a:after {
                 content: '>';
                 padding-left: $global-spacer--half;

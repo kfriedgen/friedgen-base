@@ -12,7 +12,7 @@
 
         <div class="homepage__inner">
         
-            <div class="homepage__introduction">
+            <div class="homepage__introduction page__content">
                 <?php get_template_part('templates/home/introduction'); ?>
             </div>
 
@@ -39,6 +39,10 @@
             <div class="homepage__more-posts">
                 <?php get_template_part('templates/home/secondary-recent-posts'); ?>
             </div>
+
+        </div>
+
+        <div class="homepage__pre-footer">
 
         </div>
 

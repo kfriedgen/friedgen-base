@@ -21,7 +21,7 @@
     }
 
     &__inner {
-        padding: $global-spacer--2;
+        padding: 0 $global-spacer--2 $global-spacer;
 
         &:nth-child(1) {
             max-width: 540px;

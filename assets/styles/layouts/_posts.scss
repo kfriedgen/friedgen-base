@@ -137,6 +137,13 @@
 
         &-outer {
             width: 100%;
+            margin-bottom: $global-spacer;
+            border-bottom: 1px solid $gray-light;
+
+            @media only screen and (min-width: 900px) {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
         }
     }
 
@@ -144,10 +151,8 @@
 
     &__sidebar {
 
-        @media only screen and (min-width: 900px) {
-            margin-left: $global-spacer--5;
-            padding: 0 $global-spacer--3;
-            border-left: 1px solid $gray-light;
+        @include media-breakpoint-up(lg) {
+            margin-left: $global-spacer--3;
         }
 
         h1,
@@ -157,7 +162,12 @@
         h5,
         h6,
         p {
-            padding: 0;
+            margin-top: 0;
+            padding: 0 $global-spacer--half;
+
+            @media only screen and (min-width: 768px) {
+                padding: 0;
+            }
         }
 
     }
