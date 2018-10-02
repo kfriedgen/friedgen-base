@@ -208,8 +208,7 @@
         }
 
         a {
-            @include base-h2();
-            font-size: $font-large;
+            @include base-h5();
             color: $link;
 
                 &:hover,

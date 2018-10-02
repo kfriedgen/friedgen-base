@@ -67,15 +67,16 @@ $information: $blue;
 
 
 // Typefaces
-$font-sans-serif:           'Open Sans', Arial, sans-serif;
-$font-serif:                'Cormorant Garamond', Georgia, serif;
+$font-sans-serif:           'Roboto','Open Sans', Arial, sans-serif;
+$font-serif:                'EB Garamond', Georgia, serif;
 $font-primary:              $font-sans-serif;
-$font-secondary:            'Cormorant Garamond', Georgia, serif;
-$font-tertiary:             Courier, sans-serif;
+$font-secondary:            'EB Garamond', Georgia, serif;
+$font-tertiary:             'Roboto','Open Sans', Arial, sans-serif;
+
 
 // Font Size
 
-$font-x2-small:            11.237px;
+$font-x2-small:             11.237px;
 $font-x-small:              12.642px;
 $font-small:                14.222px;
 $font-normal:               16px;

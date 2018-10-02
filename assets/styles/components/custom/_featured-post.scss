@@ -5,7 +5,7 @@
     justify-content: center;
     flex-flow: column;
     margin-top: 0;
-    padding: $global-spacer--3 0;
+    padding: $global-spacer--5 0 $global-spacer--4;
     background: $pink-dark;
 
     @include media-breakpoint-up(sm) {
@@ -36,7 +36,7 @@
 
 
             @include media-breakpoint-up(lg) {
-                margin: $global-spacer--3 $global-spacer--2;
+                margin: $global-spacer--3 $global-spacer--2 0;
             }
 
         }

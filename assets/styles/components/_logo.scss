@@ -10,6 +10,7 @@
         letter-spacing: 4.08px;
         color: $logo;
         text-align: center;
+        border-radius: $global-spacer--half;
         border-bottom: 2px double $body-background;
         
         @keyframes slow-background {

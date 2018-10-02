@@ -1,10 +1,7 @@
 // Blog Patterns
 
 @mixin blog-preview-title {
-    @include base-p();
-    font-family: $font-primary;
-    font-weight: 600;
-    text-transform: capitalize;
+    color: $black;
     border-bottom: none;
 }
 
@@ -13,4 +10,8 @@
     font-size: $font-x-small;
     letter-spacing: 0.5px;
     color: $gray;
+}
+
+@mixin page-header {
+    @include base-h2();
 }

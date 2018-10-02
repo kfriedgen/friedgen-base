@@ -2,6 +2,10 @@
 
 .page {
 
+    &-header h1 {
+        @include page-header();
+    }
+
     &__title {
         display: none;
     }
@@ -9,12 +13,13 @@
     &__content {
         width: 100%;
         max-width: 960px;
-        margin: $global-spacer--2 auto $global-spacer--3;
-        padding: 0 $global-spacer--2;
+        margin: 0 auto $global-spacer--4;
+        padding: 0;
         text-align: center;
 
         @include media-breakpoint-up(sm) {
-            padding: 0;
+            margin: $global-spacer--2 auto $global-spacer--3;
+            padding: 0 $global-spacer--2;
         }
 
         p {
@@ -35,7 +40,11 @@
             flex-flow: row wrap;
         }
 
+        h1,
+        h2,
+        h3,
         h4,
+        h5,
         h6 {
             padding: 0 $global-spacer--2;
 
@@ -48,7 +57,7 @@
             }
         }
 
-        h4 {
+        h3 {
 
             a {
                 color: $black;
@@ -60,6 +69,20 @@
             a {
                 color: $gray;
             }
+        }
+    }
+}
+
+.home {
+
+    .page__content {
+
+        p {
+            @include base-h1();
+            font-style: normal;
+            font-weight: normal;
+            text-transform: initial;
+            color: $black;
         }
     }
 }

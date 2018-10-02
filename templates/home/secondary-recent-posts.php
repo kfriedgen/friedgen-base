@@ -1,6 +1,6 @@
 <div class="recent-posts__outer">
     
-    <h5 class="recent-posts__title">Recent Writings</h5>
+    <h3 class="recent-posts__title">Recent Writings</h5>
     
     <div class="recent-posts">
         <?php
@@ -23,9 +23,11 @@
 
                 <div class="recent-posts__info">
                             
-                    <a class="recent-posts__link" href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?> 
-                    </a>
+                    <h5>
+                        <a class="recent-posts__link" href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?> 
+                        </a>
+                    </h5>
 
                     <span class="recent-posts__date">
                         <?php the_date('m.d.Y'); ?> 

@@ -109,10 +109,9 @@
         &__title,
         .blogroll__title {
             margin-bottom: $global-spacer;
-            font-family: $font-sans-serif;
-            font-size: $font-normal;
+            font-size: $font-medium;
             font-weight: 600;
-            line-height: $font-normal*2;
+            line-height: $font-medium*2;
             font-style: normal;
             text-align: center;
         }
