@@ -87,6 +87,11 @@ blockquote {
     @include base-p();
 }
 
+ul,
+ol {
+    padding-right: $global-spacer--2;
+}
+
 .font {
     &__primary {
         font-family: $font-primary;
@@ -127,16 +132,25 @@ a {
     background: $highlight;
 }
 
-// Messaging
+// Messaging + Typography
 
 .has-success {
+    @include base-p();
     @include messaging($success);
 }
 
-.has-warning {
+.has-warning,
+.alert-warning {
+    @include base-p();
     @include messaging($warning);
+    border: none;
 }
 
 .has-error {
+    @include base-p();
     @include messaging($error);
+}
+
+.base-caption {
+    @include base-caption();
 }

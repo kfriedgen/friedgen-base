@@ -13,7 +13,7 @@
         display: flex;
         flex-flow: column;
         width: 100%;
-        max-width: 1000px;
+        max-width: 1024px;
         margin-bottom: $global-spacer--3;
         padding: 0 $global-spacer--2;
         border-bottom: 1px solid $gray-light;
@@ -21,6 +21,7 @@
         @media only screen and (min-width: 768px) { 
             flex-flow: row;
             margin: $global-spacer--2 auto $global-spacer--6;
+            padding: 0 $global-spacer--2;
             border: none;
         }
 
@@ -31,6 +32,7 @@
         }
 
         h2,
+        h3,
         h6 {
             text-align: center;
             
@@ -43,18 +45,19 @@
 
     &__inner {
         width: 100%;
+        margin-bottom: $global-spacer--3;
 
         @media only screen and (min-width: 768px) {
             width: 50%;
+            margin-bottom: $global-spacer;
         }
     }
 
-    &__feature-image {    
+    &__feature-image {  
+        @include photo-border();  
         height: 300px;
         overflow: -webkit-paged-x;
-        margin-bottom: $global-spacer--2;
         padding-bottom: $global-spacer--2;
-        border: 1px solid $gray;
 
         @media only screen and (min-width: 768px) {
             margin: 0 $global-spacer--4 0 0;
@@ -69,7 +72,6 @@
         img {
             display: block;
             padding: 0;
-            border: 20px solid $body-background;
         }
     }
 
@@ -81,7 +83,7 @@
 
         @media only screen and (min-width: 768px) { 
             margin: 0;
-            padding: 0 $global-spacer--4;
+            padding: 0 $global-spacer--2;
             border-bottom: none;
             border-right: 1px solid $gray-light;
 
@@ -96,6 +98,10 @@
             &:last-child {
                 order: 1;
             }
+        }
+
+        @media only screen and (min-width: 900px) {
+            padding: 0 $global-spacer--4;
         }
 
         &-outer {
@@ -114,6 +120,10 @@
             @media only screen and (min-width: 1200px) {
                 padding: 0;
             }
+        }
+
+        &-title {
+            margin-bottom: $global-spacer--half;
         }
     }
 }

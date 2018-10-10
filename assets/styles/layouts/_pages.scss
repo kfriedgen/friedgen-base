@@ -4,6 +4,7 @@
 
     &-header h1 {
         @include page-header();
+        margin-bottom: $global-spacer--3;
     }
 
     &__title {
@@ -14,12 +15,11 @@
         width: 100%;
         max-width: 960px;
         margin: 0 auto $global-spacer--4;
-        padding: 0;
+        padding: 0 $global-spacer--2;
         text-align: center;
 
         @include media-breakpoint-up(sm) {
             margin: $global-spacer--2 auto $global-spacer--3;
-            padding: 0 $global-spacer--2;
         }
 
         p {

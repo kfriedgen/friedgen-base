@@ -53,7 +53,12 @@
         }
 
         .textwidget {
-            border: 20px solid $body-background;
+            @include photo-border();
+
+            img {
+                width: 100%;
+                min-width: 340px;
+            }
         }
     }
 }

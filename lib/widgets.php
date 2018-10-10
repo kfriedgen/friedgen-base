@@ -66,7 +66,7 @@ function about_sidebar() {
         'id'            => 'about-sidebar',
         'before_widget' => '<div class="about__sidebar">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="about-sidebar__title">',
+        'before_title'  => '<h4 class="about__sidebar-title">',
         'after_title'   => '</h4>',
     ) );
 

@@ -51,7 +51,7 @@
             }
 
             @include media-breakpoint-up(lg) {
-                padding: $global-spacer--2 0 0;
+                padding: $global-spacer--2 $global-spacer--2 0;
             }
         }
     }

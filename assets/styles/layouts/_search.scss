@@ -106,14 +106,8 @@
             background-color: rgba($pink-dark, 0.4);
         }
 
-        &__title,
-        .blogroll__title {
-            margin-bottom: $global-spacer;
-            font-size: $font-medium;
-            font-weight: 600;
-            line-height: $font-medium*2;
-            font-style: normal;
-            text-align: center;
+        &__title {
+            @include blogroll-title();
         }
 
         &__link {}

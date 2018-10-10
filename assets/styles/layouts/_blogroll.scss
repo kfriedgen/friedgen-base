@@ -171,13 +171,15 @@
     }
 
     &__title {
-        @include base-h1();
-        text-align: center;
-
+        @include blogroll-title();
 
         @include media-breakpoint-up(lg) {
             margin: 0 0 $global-spacer 0;
             text-align: left;
+        }
+
+        .blog & {
+            @include base-h3();
         }
     }
 

@@ -45,7 +45,11 @@
             border-bottom: none;
         }
 
-        h3 {}
+        h3 {
+            @include base-h2();
+            font-size: $font-large;
+            margin-bottom: $global-spacer;
+        }
 
         p {
             margin-bottom: 0;
@@ -65,6 +69,23 @@
                     @include button-secondary();
                 }
              }
+        }
+    }
+}
+
+.sbi_photo {
+    margin-bottom: $global-spacer;
+    border-bottom: none;
+
+    &__link {
+        color: $text-primary;
+        text-align: center;
+        display: block;
+        border-bottom: none;
+
+        &:hover,
+        &:focus {
+            color: $link;
         }
     }
 }

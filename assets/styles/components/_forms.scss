@@ -49,7 +49,8 @@ input {
     @include base-p();
 
     &[type="text"],
-    &[type="email"] {
+    &[type="email"],
+    &[type="password"] {
         @include input-text();
     }
 

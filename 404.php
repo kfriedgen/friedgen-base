@@ -1,7 +1,5 @@
-<?php get_template_part('templates/page', 'header'); ?>
-
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'sage'); ?>
+<div class="error404__header">
+    <?php get_template_part('templates/page', 'header'); ?>
 </div>
 
-<?php get_search_form(); ?>
+<?php get_template_part('templates/no-results'); ?>

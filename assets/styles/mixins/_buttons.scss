@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     height: 44px;
-    margin: $global-spacer--2 0;
+    margin: $global-spacer--2 auto;
     font: bold $font-normal $font-primary;
     text-align: center;
     letter-spacing: 1.5px;
@@ -28,7 +28,7 @@
     align-items: center;
     width: 100%;
     height: 44px;
-    margin-bottom: $global-spacer--2;
+    margin: 0 auto $global-spacer--2;
     padding: 0;
     color: $blue;
     font: bold $font-normal $font-primary;
@@ -50,7 +50,7 @@
 }
 
 @mixin button-text() {
-    margin-bottom: $global-spacer--three-halves;
+    margin: 0 auto $global-spacer--three-halves;
     font: 400 $font-medium $font-tertiary;
     color: $blue;
     letter-spacing: 1px;
@@ -71,7 +71,7 @@
     display: block;
     width: 100%;
     height: 44px;
-    margin-bottom: $global-spacer;
+    margin: 0 auto $global-spacer;
     padding: 0;
     color: $body-background;
     font: 400 $font-normal $font-tertiary;
