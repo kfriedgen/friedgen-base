@@ -1,7 +1,8 @@
 // Search
 
 .search-results,
-.category {
+.category,
+.tag {
 
     .main {
         display: flex;
@@ -74,7 +75,8 @@
 }
 
 .search,
-.category {
+.category,
+.tag {
         
         &__inner,
         .blogroll__single {

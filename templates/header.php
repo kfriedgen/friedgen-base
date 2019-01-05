@@ -27,7 +27,11 @@
         <div class="header__inner header__logo-outer u-medium--show">
 
             <a class="header__logo logo__a" href="<?= esc_url(home_url('/')); ?>">
-                <?php bloginfo('name'); ?>
+                <span>
+                    <span>
+                        <span><?php bloginfo('name'); ?></span>
+                    </span>
+                </span>
             </a>
 
         </div>

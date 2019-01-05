@@ -70,9 +70,7 @@
     h4,
     h5,
     h6,
-    p,
-    ol,
-    ul {
+    p {
         padding: 0 $global-spacer--2;
         
         @include media-breakpoint-up(md) {
@@ -130,12 +128,17 @@
                 margin: 0;
             }
 
-            ul li {
-                @include base-caption();
-                text-transform: capitalize;
-                font-style: normal;
-                letter-spacing: 1px;
-                font-weight: 300;
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    @include base-caption();
+                    text-transform: capitalize;
+                    font-style: normal;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                }
             }
         }
     }

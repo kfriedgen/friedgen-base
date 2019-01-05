@@ -3,19 +3,6 @@
  * Register our sidebars and widgetized areas.
  *
  */
-function featured_content() {
-
-    register_sidebar( array(
-        'name'          => 'Featured Home Content',
-        'id'            => 'featured-content',
-        'before_widget' => '<div class="featured-content">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="featured-content__title">',
-        'after_title'   => '</h4>',
-    ) );
-
-}
-add_action( 'widgets_init', 'featured_content' );
 
 function introduction() {
 
@@ -30,6 +17,35 @@ function introduction() {
 
 }
 add_action( 'widgets_init', 'introduction' );
+
+function featured_content() {
+
+    register_sidebar( array(
+        'name'          => 'Featured Home Content',
+        'id'            => 'featured-content',
+        'before_widget' => '<div class="featured-content">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="featured-content__title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'featured_content' );
+
+
+function about_sidebar() {
+
+    register_sidebar( array(
+        'name'          => 'About Sidebar',
+        'id'            => 'about-sidebar',
+        'before_widget' => '<div class="about__sidebar">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="about__sidebar-title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'about_sidebar' );
 
 function design_feature() {
 
@@ -59,17 +75,4 @@ function photography_feature() {
 }
 add_action( 'widgets_init', 'photography_feature' );
 
-function about_sidebar() {
-
-    register_sidebar( array(
-        'name'          => 'About Sidebar',
-        'id'            => 'about-sidebar',
-        'before_widget' => '<div class="about__sidebar">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="about__sidebar-title">',
-        'after_title'   => '</h4>',
-    ) );
-
-}
-add_action( 'widgets_init', 'about_sidebar' );
 ?>

@@ -89,10 +89,62 @@ select {
     }
 
     &-msg {
+        @include base-p();
+        @include messaging($error);
         color: $error!important;
     }
 }
 
-.ninja-forms-req-symbol {
-    color: $error!important;
+.ninja-forms {
+
+    &-req-symbol {
+        color: $error!important;
+    }
+
+    &-field {
+
+        &[type="button"] {
+            @include button-submit();
+            width: 100%!important;
+        }
+    }
+
+    &-cont {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 $global-spacer--2;
+    }
+
+    &-required-items {
+        @include base-p();
+    }
+
+    &-form-wrap {
+        width: 100%;
+        height: 44px;
+    }
+}
+
+.nf-form {
+
+    &-fields-required {
+        @include base-p();
+    }
+
+    &-title {
+        display: none;
+    }
+
+    &-wrap {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 $global-spacer--2;
+    }
+}
+
+.ninja-forms-form-wrap input[type=submit] {
+    width: 100%;
+    height: 44px;
 }

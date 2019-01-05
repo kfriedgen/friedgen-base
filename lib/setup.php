@@ -92,7 +92,9 @@ function display_sidebar() {
     is_page_template('template-pattern-lab.php'),
     is_page_template('page-template-default'),
     is_page('design'),
+    is_page('photography'),
     is_page('photography-2'),
+    is_page('about'),
     is_page('about-2'),
     is_single(),
   ]);

@@ -59,6 +59,10 @@
                 width: 100%;
                 min-width: 340px;
             }
+
+            @include media-breakpoint-up(md) {
+                min-width: 460px;
+            }
         }
     }
 }

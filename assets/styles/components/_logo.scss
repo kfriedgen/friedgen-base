@@ -10,21 +10,15 @@
         letter-spacing: 4.08px;
         color: $logo;
         text-align: center;
-        border-radius: $global-spacer--half;
-        border-bottom: 2px double $body-background;
+        text-decoration: none;
+        border-bottom: none;
+        @include btn-border-slide($body-background, $pink-dark, 2px, 0.8s);
         
-        @keyframes slow-background {
-            from {background-color: $body-background;}
-            to {background-color: $blue-light;}
-        }
+        
 
         &:hover,
         &:focus {
-            color: $logo;
-            background: $blue-light;
-            border-bottom: 2px double $blue-light;
-            animation-name: slow-background;
-            animation-duration: 4s;
+            color: $hover;
         }
     }
 }

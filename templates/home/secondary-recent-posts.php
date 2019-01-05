@@ -18,7 +18,7 @@
                 <?php endif; ?>
                 
                 <a class="recent-posts__image-link" href="<?php the_permalink(); ?>">
-                    <?php echo the_post_thumbnail();  ?>
+                    <?php echo the_post_thumbnail('large');  ?>
                 </a>
 
                 <div class="recent-posts__info">

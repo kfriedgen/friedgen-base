@@ -9,6 +9,7 @@
 @import "mixins/forms";
 @import "mixins/buttons";
 @import "mixins/blog-patterns";
+@import "mixins/animation";
 
 @import "common/global";
 
@@ -40,5 +41,6 @@
 @import "layouts/blogroll";
 @import "layouts/search";
 @import "layouts/about";
+@import "layouts/contact-us";
 
 @import "common/utilities";

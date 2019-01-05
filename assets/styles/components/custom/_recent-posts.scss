@@ -90,11 +90,7 @@
             height: 200px;
             margin: 0 0 $global-spacer;
             border: none;
-
-            @include media-breakpoint-up(sm) { 
-                height: initial;
-            }
-
+            
             &:hover,
             &:focus {
                 border: none;

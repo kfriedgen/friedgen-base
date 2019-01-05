@@ -69,11 +69,13 @@
                 border-color: $pink;
             }
 
-            .photography-2 & {
+            .photography-2,
+            .photography & {
                 border-color: $green-light;
             }
 
-            .about-2 & {
+            .about-2,
+            .about & {
                 border-color: $yellow;
             }
 

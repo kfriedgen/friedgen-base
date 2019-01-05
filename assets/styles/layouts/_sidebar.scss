@@ -11,13 +11,13 @@
     }
 
     @media only screen and (min-width: 900px) {
+        display: block;
         width: 60%;
         padding: 0 25px;
         border-left: 1px solid $gray-light;
     }
 
     @media only screen and (min-width: 992px) {
-        display: block;
     }
 
     .widget {
@@ -55,7 +55,8 @@
             margin-bottom: 0;
         }
 
-        &_categories {
+        &_categories,
+        .menu-categories-container {
              ul {
                 margin: 0;
                 padding: 0;
