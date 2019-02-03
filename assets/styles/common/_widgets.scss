@@ -3,8 +3,13 @@
 .widget {
 
     &__case-study-nav {
+        display: none;
         width: 100%;
         margin: 0 240px;
+
+        .guided-shop-experience & {
+            display: block;
+        }
 
         @media only screen and (min-width: 500px) {
             margin: 0 190px;
@@ -61,6 +66,13 @@
         .textwidget {
 
             @media only screen and (min-width: 768px) {}
+        }
+
+        h5 {
+
+            @media only screen and (min-width: 1200px) {
+                display: none;
+            }
         }
 
         ul {
