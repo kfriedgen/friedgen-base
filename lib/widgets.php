@@ -75,4 +75,32 @@ function photography_feature() {
 }
 add_action( 'widgets_init', 'photography_feature' );
 
+function widget_team() {
+
+    register_sidebar( array(
+        'name'          => 'Team',
+        'id'            => 'widget-team',
+        'before_widget' => '<div class="widget__team">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget__team-title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+add_action( 'widgets_init', 'widget_team' );
+
+function widget_cs_nav() {
+
+    register_sidebar( array(
+        'name'          => 'Case Study Navigation',
+        'id'            => 'widget-case-study-nav',
+        'before_widget' => '<div class="widget__case-study-nav">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h5 class="widget__case-study-nav-title">',
+        'after_title'   => '</h5>',
+    ) );
+
+}
+add_action( 'widgets_init', 'widget_cs_nav' );
+
 ?>

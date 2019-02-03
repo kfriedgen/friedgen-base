@@ -89,6 +89,7 @@ function display_sidebar() {
     is_front_page(),
     is_page_template('template-custom.php'),
     is_page_template('template-project.php'),
+    is_page_template('template-case-study.php'),
     is_page_template('template-pattern-lab.php'),
     is_page_template('page-template-default'),
     is_page('design'),

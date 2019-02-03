@@ -1,0 +1,244 @@
+// Case Study Page Styles
+
+.case-study {
+    max-width: 1440px;
+    margin: auto;
+
+    &__outer {
+        padding: 0;
+
+        @media only screen and (min-width: 992px) {  
+            padding: 0 $global-spacer--2;
+        }
+    }
+
+    &__category {
+
+        .post-categories {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+
+                a {
+                    @include base-caption();
+                    border-color: $body-background;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                        color: $hover;
+                        border-color: $link;
+                    }
+                }
+            }
+        }
+    }
+
+    &__main {
+        order: 1;
+
+        @media only screen and (min-width: 1200px) {
+            order: 2;
+        }
+
+
+        &-outer {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            margin-bottom: $global-spacer--3;
+            padding: 0;
+
+            @media only screen and (min-width: 1200px) {
+                padding: 0 10.5% 0 0;
+                flex-flow: row;
+                margin-bottom: $global-spacer--5;
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-flow: column;
+
+        @media only screen and (min-width: 900px) {
+            flex-flow: row;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding: 0 $global-spacer--2;
+
+            @media only screen and (min-width: 960px) {
+                padding: 0 25px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                padding: 0;
+            }
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: $global-spacer--2;
+        }
+    }
+
+    &__header {
+        order: 2;
+        width: 100%;
+        margin: $global-spacer--3 0;
+        padding-top: $global-spacer--2;    
+        background: rgba(#d4c0a6, 0.5);
+        text-align: center;
+
+        @media only screen and (min-width: 768px) {
+            order: 2;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            order: 1;
+            max-width: 160px;
+            margin: 0 $global-spacer--2 0 0;
+            padding: 0;
+            background: $body-background;
+            text-align: right;
+        }
+    }
+
+    &__feature-image {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: $global-spacer--3;
+        background-color: $yellow;
+
+        @media only screen and (min-width: 768px) {
+            height: 485px;
+        }
+    }
+
+    &__content {
+
+        &-outer {
+            order: 2;
+            top: 0;
+            width: 100%;
+            margin-bottom: $global-spacer;
+            border-bottom: 1px solid $gray-light;
+
+            @media only screen and (min-width: 900px) {
+                order: 1;
+                position: relative;
+                top: -100px;
+                background: #faf7f3;
+                padding-top: 20px;
+                border-radius: 0 10px;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__sidebar {
+        overflow: scroll;
+        margin-bottom: $global-spacer--3;
+
+        @media only screen and (min-width: 768px) {
+            overflow: unset;
+        }
+
+        @media only screen and (min-width: 900px) {
+            order: 2;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-left: $global-spacer--3;
+            padding-right: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-top: 0;
+            padding: 0 $global-spacer--half;
+
+            @media only screen and (min-width: 768px) {
+                padding: 0;
+            }
+        }
+
+    }
+
+    &__pagination {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 100px;
+        text-align: center;
+
+
+        @include media-breakpoint-up(md) {
+            flex-flow: row;
+            justify-content: space-between;
+            margin: 0 $global-spacer--2 100px;
+        }
+
+
+        &-link {
+            @include title-link();
+        }
+
+        &-next {
+
+            @include media-breakpoint-up(md) {
+                text-align: right;
+            }
+        }
+
+        &-previous {
+            margin-bottom: $global-spacer--3;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+                text-align: left;
+            }
+        }
+
+        a {
+            @include base-h5();
+            color: $link;
+
+            &:hover,
+            &:focus {
+                color: $hover;
+                border-color: $link;
+            }
+        }
+    }
+
+    &__comments {
+        display: none;
+    }
+}

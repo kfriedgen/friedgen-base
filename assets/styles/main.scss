@@ -12,6 +12,7 @@
 @import "mixins/animation";
 
 @import "common/global";
+@import "common/widgets";
 
 @import "components/logo";
 @import "components/navigation";
@@ -42,5 +43,6 @@
 @import "layouts/search";
 @import "layouts/about";
 @import "layouts/contact-us";
+@import "layouts/case-studies";
 
 @import "common/utilities";
