@@ -7,7 +7,8 @@
         width: 100%;
         margin: 0 240px;
 
-        .guided-shop-experience & {
+        .guided-shop-experience &,
+        .west-elm-guided-shop & {
             display: block;
         }
 
@@ -112,7 +113,8 @@
 
         &.guided-shop {
 
-            .guided-shop-experience & {
+            .guided-shop-experience &,
+            .west-elm-guided-shop & {
                 display: block;
             }
         }
