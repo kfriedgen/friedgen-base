@@ -44,5 +44,5 @@ figcaption {
     width: 100%;
     margin: $global-spacer 0 $global-spacer--three-halves 0;
     background: none;
-    padding: 0;
+    padding: 0 $global-spacer;
 }

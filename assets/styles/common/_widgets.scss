@@ -3,17 +3,36 @@
 .widget {
 
     &__case-study-nav {
+        position: sticky;
+        top: 25px;
         display: none;
         width: 100%;
-        margin: 0 240px;
+        margin: 0 0 0 100%;
 
         .guided-shop-experience &,
         .west-elm-guided-shop & {
-            display: block;
+            
+            &.guided-shop {
+                display: block;
+            }
+        }
+
+
+        .west-elms-registry-matchmaker & {
+
+            &.registry-matchmaker {
+                display: block;
+            }
+        }
+
+        .west-elms-product-detail-page & {
+            &.product-detail-page {
+                display: block;
+            }
         }
 
         @media only screen and (min-width: 500px) {
-            margin: 0 190px;
+            margin: 0 0 0 60%;
         }
 
         @media only screen and (min-width: 768px) {
@@ -37,6 +56,7 @@
             &-item {
                 width: 100%;
                 margin-right: $global-spacer!important;
+                text-align: center;
 
                 @media only screen and (min-width: 900px) {
                     margin-bottom: $global-spacer--2!important;
@@ -121,6 +141,18 @@
 
         &.leslie-hudson {
             .leslie-hudson & {
+                display: block;
+            }
+        }
+
+        &.registry-matchmaker {
+            .west-elms-registry-matchmaker & {
+                display: block;
+            }
+        }
+
+        &.product-detail-page {
+            .west-elms-product-detail-page & {
                 display: block;
             }
         }
