@@ -33,7 +33,7 @@
         justify-content: center;
         flex-flow: column;
         width: 100%;
-        max-width: 960px;
+        max-width: 1000px;
         margin: auto auto $global-spacer--10 auto;
 
         @include media-breakpoint-up(sm) {
@@ -94,13 +94,25 @@
         width: 100%;
         margin: 0 0 $global-spacer--3 0;
 
-        @include media-breakpoint-up(sm) {
-            width: 50%;
-            padding: $global-spacer--2;
+        &:nth-child(2),
+        &:nth-child(5) {
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+                padding: 0 $global-spacer--2 0 0;
+            }
         }
 
-        &:nth-child(3) {
+
+        &:nth-child(3),
+        &:nth-child(6) {
             width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+                padding: 0 0 0 $global-spacer--2;
+            }
         }
 
         a {

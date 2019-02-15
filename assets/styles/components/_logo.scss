@@ -14,12 +14,11 @@
         border-bottom: none;
         @include btn-border-slide($body-background, $pink-dark, 2px, 0.8s);
         border-radius: 0 $global-spacer--half;
-        
-        
 
         &:hover,
         &:focus {
             color: $hover;
         }
+
     }
 }

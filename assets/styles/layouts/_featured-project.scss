@@ -1,0 +1,55 @@
+// Featured Project
+
+.featured-project {
+    
+
+    &__title {}
+
+    &__content {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+
+
+        &-inner {
+            margin: 0 0 $global-spacer--5 0;
+            padding: 0 $global-spacer;            
+
+            .wp-block-column {
+
+                &:nth-child(odd) {
+                    flex-basis: 100%;
+                    margin: 0;
+
+                    @media only screen and (min-width: 769px) {
+                        flex-basis: 60%;
+                    } 
+
+                    @media only screen and (min-width: 900px) {
+                        flex-basis: 80%;
+                    }   
+                }
+
+                &:nth-child(even) {
+                    flex-basis: 100%;
+                    padding: 0;
+                    text-align: center;
+
+                    @media only screen and (min-width: 769px) {
+                        flex-basis: 40%;
+                        margin-top: $global-spacer--2;
+                        padding-left: $global-spacer--2;
+                        text-align: left;
+                    }
+
+                    @media only screen and (min-width: 900px) {
+                        flex-basis: 20%;
+                        padding-left: $global-spacer--2;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -4,6 +4,7 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    padding: 0;
 
     @include media-breakpoint-up(sm) {
         justify-content: space-around;
@@ -65,12 +66,14 @@
         &.current-menu-item a {
             color: $black;
 
-            .design & {
+            .design &,
+            .work & {
                 border-color: $pink;
             }
 
             .photography-2,
-            .photography & {
+            .photography &,
+            .case-studies & {
                 border-color: $green-light;
             }
 

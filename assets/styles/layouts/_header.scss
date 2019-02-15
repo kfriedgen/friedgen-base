@@ -1,14 +1,16 @@
 // Header Styles
 
 .header {
+    width: 100%;
+    max-width: 1440px;
     display: block;
-    margin: $global-spacer--2 0;
+    margin: $global-spacer--2 auto;
 
     @include media-breakpoint-up(lg) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: $global-spacer--three-halves 0;
+        margin: $global-spacer--three-halves auto;
     }
 
     &__outer {}
@@ -52,10 +54,6 @@
 
         &-outer {
             width: 100%;
-            
-            @include media-breakpoint-up(lg) {
-                width: 80%;
-            }
         }
 
         .search-field {
@@ -72,10 +70,6 @@
 
         &-outer {
             width: 100%;
-            
-            @include media-breakpoint-up(lg) {
-                width: 80%;
-            }
         }
     }
 }

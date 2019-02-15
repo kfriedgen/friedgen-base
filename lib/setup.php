@@ -92,6 +92,7 @@ function display_sidebar() {
     is_page_template('template-case-study.php'),
     is_page_template('template-pattern-lab.php'),
     is_page_template('page-template-default'),
+    is_page_template('template-featured-project.php'),
     is_page('design'),
     is_page('photography'),
     is_page('photography-2'),
