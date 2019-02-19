@@ -3,7 +3,15 @@
 .featured-project {
     
 
-    &__title {}
+    &__title {
+        .page-header h1 {
+            margin-bottom: 0;
+        }
+
+        &-sub {
+            margin: $global-spacer--2 0 0;
+        }
+    }
 
     &__content {
         width: 100%;
@@ -13,7 +21,8 @@
 
         &-inner {
             margin: 0 0 $global-spacer--5 0;
-            padding: 0 $global-spacer;            
+            padding: 0 $global-spacer;  
+            align-items: center;          
 
             .wp-block-column {
 
@@ -37,19 +46,24 @@
 
                     @media only screen and (min-width: 769px) {
                         flex-basis: 40%;
-                        margin-top: $global-spacer--2;
-                        padding-left: $global-spacer--2;
+                        margin: 0 $global-spacer--2;
                         text-align: left;
                     }
 
                     @media only screen and (min-width: 900px) {
                         flex-basis: 20%;
-                        padding-left: $global-spacer--2;
                     }
                 }
             }
         }
+
+        .wp-block-image {
+            margin: 0 0 $global-spacer--4 0;
+        }
+
+        figcaption {
+            margin: 0;
+            padding: 0 $global-spacer--4;
+        }
     }
-
-
 }

@@ -127,10 +127,15 @@ a {
     }
 
     img {
+        border-bottom: none;
 
         a & {
-            border: none;
+            border-bottom: none;
         }
+    }
+
+    .wp-block-image & {
+        border: none;
     }
 }
 
